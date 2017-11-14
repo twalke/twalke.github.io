@@ -5,6 +5,11 @@ body {
   		font-family: 'Proxima Nova', Georgia, sans-serif;
 } 
 
+#resume {
+  height: 20vh;
+  text-align: center;
+}
+
 #resume button {
   margin-top: 6vh;
   background-color: transparent;
