@@ -59,6 +59,10 @@ body {
 }
 
 #landingPage h1 {
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+#landingPage h1 {
   color: white;
   font-family: 'Proxima Nova', Georgia, sans-serif;
   height: 100vh;
