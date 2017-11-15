@@ -7,7 +7,7 @@ body {
 
 #resume {
   height: 20vh;
-  text-align: center;
+  text-align: left;
 }
 
 #github {
@@ -17,7 +17,7 @@ body {
 
 #email {
   height: 20vh;
-  text-align: center;
+  text-align: right;
 }
 
 #resume button {
