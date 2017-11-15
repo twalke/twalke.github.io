@@ -21,7 +21,7 @@ body {
 }
 
 #resume button {
-vertical-align: top;
+ display: inline-block;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -32,7 +32,7 @@ vertical-align: top;
 }
 
 #github button {
-  vertical-align: top;
+  display: inline-block;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -43,7 +43,7 @@ vertical-align: top;
 }
 
 #email button {
-  vertical-align: top;
+  display: inline-block;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -58,7 +58,7 @@ vertical-align: top;
   font-size: 75px;
 }
 
-#landingPage h1{
+#landingPage h1 {
   color: white;
   font-family: 'Proxima Nova', Georgia, sans-serif;
   height: 100vh;
