@@ -22,7 +22,6 @@ body {
 
 #resume button {
 vertical-align: top;
-  margin-top: 6vh;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -44,7 +43,7 @@ vertical-align: top;
 }
 
 #email button {
-  margin-top: 6vh;
+  vertical-align: top;
   background-color: transparent;
   color: white;
   border: 2px solid white;
