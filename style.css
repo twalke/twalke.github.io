@@ -6,17 +6,14 @@ body {
 } 
 
 #resume {
-  height: 20vh;
   text-align: left;
 }
 
 #github {
-  height: 20vh;
   text-align: center;
 }
 
 #email {
-  height: 20vh;
   text-align: right;
 }
 
@@ -54,7 +51,7 @@ body {
 }
 
 #landingPage h1 {
-  margin-top: 5vh;
+  margin-top: 25vh;
   font-size: 75px;
 }
 
