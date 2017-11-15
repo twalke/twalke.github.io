@@ -25,8 +25,7 @@ body {
 }
 
 .button:hover {
-  background-color: white;
-  color: black;
+  background-image: linear-gradient( rgba(0,0,0,0) 0%, rgba(0,0,0,1) 0%);
 }
 
 #landingPage h1 {
