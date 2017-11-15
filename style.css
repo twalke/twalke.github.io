@@ -53,9 +53,7 @@ body {
 
 #landingPage h2 {
   font-size: 25px;
-}
-
-#landingPage h2 {
+  height: 100px;
   color: white;
   text-align: center;
 }
@@ -67,5 +65,15 @@ body {
 #aboutMe {
   background-color: black;
   color: white;
-  height: 100vh;
+  text-align: center;
+  padding-top:25px;
+  padding-bottom:50px;
+}
+
+#projects {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top:25px;
+  padding-bottom:50px;
 }
