@@ -6,11 +6,7 @@ body {
 } 
 
 #button {
-  padding-left: 50px;
-  padding-right: 50px;
-
   text-align: center;
-
 }
 
 #button button {
@@ -66,4 +62,10 @@ body {
 
 #content h2 {
   text-align: center;
+}
+
+#aboutMe {
+  background-color: black;
+  color: white;
+  height: 100vh;
 }
