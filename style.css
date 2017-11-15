@@ -28,8 +28,8 @@ vertical-align: top;
   border: 2px solid white;
   border-radius: 5px;
   font-size: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #github button {
@@ -39,8 +39,8 @@ vertical-align: top;
   border: 2px solid white;
   border-radius: 5px;
   font-size: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #email button {
@@ -50,8 +50,8 @@ vertical-align: top;
   border: 2px solid white;
   border-radius: 5px;
   font-size: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #landingPage h1 {
