@@ -84,7 +84,7 @@ body {
 #landingPage h1 {
   color: white;
   font-family: 'Heebo', sans-serif;
-  height: 100vh;
+  height: 100px;
   text-align: center;
 }
 
@@ -96,4 +96,17 @@ body {
 .innerBox h1 {
   padding-top: 6%;
   color: white;
+}
+
+#landingPage h2 {
+  font-size: 25px;
+}
+
+#landingPage h2 {
+  color: white;
+  text-align: center;
+}
+
+#content h2 {
+  text-align: center;
 }
