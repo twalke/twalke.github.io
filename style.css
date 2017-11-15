@@ -10,7 +10,39 @@ body {
   text-align: center;
 }
 
+#github {
+  height: 20vh;
+  text-align: center;
+}
+
+#email {
+  height: 20vh;
+  text-align: center;
+}
+
 #resume button {
+  margin-top: 6vh;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#github button {
+  margin-top: 6vh;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#email button {
   margin-top: 6vh;
   background-color: transparent;
   color: white;
