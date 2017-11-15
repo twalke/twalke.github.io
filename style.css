@@ -29,6 +29,8 @@ body {
   font-size: 25px;
   padding-left: 75px;
   padding-right: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #github button {
@@ -41,6 +43,8 @@ body {
   font-size: 25px;
   padding-left: 75px;
   padding-right: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #email button {
@@ -53,6 +57,8 @@ body {
   font-size: 25px;
   padding-left: 75px;
   padding-right: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #landingPage h1 {
