@@ -56,7 +56,13 @@ body {
 #landingPage h1 {
   margin-top: 30vh;
   font-size: 75px;
+}
+
+#landingPage {
+  color: white;
   font-family: 'Proxima Nova', Georgia, sans-serif;
+  height: 100vh;
+  text-align: center;
 }
 
 #content h1 {
