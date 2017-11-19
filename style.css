@@ -1,5 +1,5 @@
 body {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25) ), url('canyon_bw.jpeg');
+        background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0) ), url('canyon_bw.jpeg');
         background-attachment: fixed;
   		background-size: cover;
   		font-family: 'Heebo', sans-serif;
@@ -59,6 +59,31 @@ body {
 
 #content h2 {
   text-align: center;
+}
+
+ul {
+margin: 0;
+  padding: 0;
+  text-align:center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:#00000085;
+  position:fixed;
+  top:0;
+  width:100%
+}
+
+li {
+    display: inline;
+
+}
+li a{
+  text-decoration: none;
+  color:white;
+  padding:20px;
+
 }
 
 #aboutMe {
