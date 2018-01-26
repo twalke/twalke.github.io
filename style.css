@@ -104,13 +104,18 @@ li a{
 
 }
 
-#aboutMe {
+.about {
   background-color: black;
   color: white;
   text-align: center;
   padding-top:1px;
   padding-bottom:50px;
   margin-top:200px;
+  visibility: hidden;
+}
+
+.about.visible {
+  visibility: visible;
 }
 
 #projects {

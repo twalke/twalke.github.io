@@ -6,12 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Heebo:bold" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Heebo:light" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="app.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<div id="buttonDiv" class="w3-bar">
-  <a target="_blank" href="" class="button">About Me</a>
+<div id="buttonDiv">
+  <a target="_blank" href="" class="button" onclick="onAboutClick()">About Me</a>
   <a target="_blank" href="Resume_TylerWalke_January2018_v5.pdf" class="button">Resume</a>
   <a target="_blank" href="" class="button">Projects</a>
   <a target="_blank" href="https://github.com/twalke" class="button">GitHub</a>
@@ -19,19 +21,19 @@
   <a target="_blank" href="mailto:tyler.walke@gmail.com" class="button">Email</a>
 </div>
 
-<div class="col-xs-12" id="landingPage">
+<div id="landingPage">
   <h1>TYLER WALKE</h1>
   <h2>I'm a student developer and I love two things: code and the outdoors.</h2>
 </div>
 
-<div class="col-xs-12" id="aboutMe">
+<div class="about">
   <div id="description"><h1> About Me </h1></div>
   <div class="pg">I'm a Computer Science student at Utah Valley University.</div>
   <div class="pg">My main areas of interest are web development and mobile programming.</div>
   <div class="pg">In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.</div>
 </div>
 
-<div class="col-xs-12" id="projects">
+<div class="" id="projects">
   <div id="description"><h1> Projects </h1></div>
   <div id="description"><h2> Canyon Guide </h2></div>
   <div id="cg"><ol>
