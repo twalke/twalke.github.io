@@ -7,7 +7,8 @@ body {
 
 #button {
   text-align: center;
-  padding-left:10px;
+  padding-top: 100px;
+  padding-left:100px;
 }
 
 #button button {
@@ -22,6 +23,12 @@ body {
   margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
 }
 
 .button:hover {
