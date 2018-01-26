@@ -5,12 +5,16 @@ body {
   		font-family: 'Heebo', sans-serif;
 }
 
-#button {
+#buttonDiv {
   text-align: center;
   padding-left:100px;
+  padding-top: 100px;
+
+  /* CHECK THIS OUT */
+  float: left;
 }
 
-#button button {
+.button {
   display: block;
   background-color: black;
   font-family: 'Heebo', sans-serif;
@@ -22,12 +26,7 @@ body {
   margin-right: 10px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.divider{
-    width:5px;
-    height:auto;
-    display:inline-block;
+  margin-bottom: 15px;
 }
 
 .button:hover {
