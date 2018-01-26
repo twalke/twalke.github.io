@@ -13,43 +13,54 @@
 
 <body>
 <div id="buttonDiv">
-  <a target="_blank" href="" class="button" onclick="onAboutClick()">About Me</a>
+  <button class="button" onclick="onAboutClick()">About Me</button>
   <a target="_blank" href="Resume_TylerWalke_January2018_v5.pdf" class="button">Resume</a>
-  <a target="_blank" href="" class="button">Projects</a>
+  <button class="button" onclick="onAboutClick()">Projects</button>
   <a target="_blank" href="https://github.com/twalke" class="button">GitHub</a>
-  <a target="_blank" href="" class="button">Hobbies</a>
+  <button class="button" onclick="onAboutClick()">Hobbies</button>
   <a target="_blank" href="mailto:tyler.walke@gmail.com" class="button">Email</a>
 </div>
 
 <div id="landingPage">
   <h1>TYLER WALKE</h1>
-  <h2>I'm a student developer and I love two things: code and the outdoors.</h2>
+
+  <div class="about">
+    <div id="description"><h2> About Me </h2></div>
+    <div class="pg">I'm a Computer Science student at Utah Valley University and I love two things: code and the outdoors.</div>
+    <div class="pg">My main areas of interest in the programing world are web development and mobile programming.</div>
+    <div class="pg">In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.</div>
+  </div>
+
+  <div class="projects">
+    <div id="description"><h2> Projects </h2></div>
+    <div id="description"><h3> Canyon Guide </h3></div>
+    <div id="cg"><ol>
+      <li>Built in Android Studio. </li>
+      <li>Mobile app that utilizes crowdsourcing to help climbers find routes in their
+  area. </li>
+  <li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
+  </ol>
+  </div>
+
+    <div id="description"><h3> Bill Splitter </h3></div>
+    <div id"bs"><ol>
+      <li>Built in Android Studio. </li>
+      <li>Mobile app that allows users to add groups and payment information in
+  order to split group bills such as utilities and restaurant checks.</li>
+  </ol></div>
+  </div>
+
 </div>
 
-<div class="about">
-  <div id="description"><h1> About Me </h1></div>
-  <div class="pg">I'm a Computer Science student at Utah Valley University.</div>
-  <div class="pg">My main areas of interest are web development and mobile programming.</div>
-  <div class="pg">In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.</div>
-</div>
-
-<div class="" id="projects">
-  <div id="description"><h1> Projects </h1></div>
-  <div id="description"><h2> Canyon Guide </h2></div>
-  <div id="cg"><ol>
-    <li>Built in Android Studio. </li>
-    <li>Mobile app that utilizes crowdsourcing to help climbers find routes in their
-area. </li>
-<li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
-</ol>
-</div>
-
-  <div id="description"><h2> Bill Splitter </h2></div>
-  <div id"bs"><ol>
-    <li>Built in Android Studio. </li>
-    <li>Mobile app that allows users to add groups and payment information in
-order to split group bills such as utilities and restaurant checks.</li>
-</ol>
-</div>
 </body>
 </html>
+
+<!--
+function onAboutClick() {
+  $(".projects").toggleClass("visible");
+}
+
+function onAboutClick() {
+  $(".hobbies").toggleClass("visible");
+}
+-->
