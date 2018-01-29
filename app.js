@@ -9,6 +9,7 @@
 
   function onProjectsClick() {
     $(".projects").toggleClass("visible");
-    $(".about").toggleClass("visible");
-
+    if($("#about2").hasClass("visible")) {
+      $(".about").toggleClass("visible");
+    }
   }
