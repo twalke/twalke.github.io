@@ -136,6 +136,21 @@ li a{
   visibility: visible;
 }
 
+.resume {
+  background-color: black;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  margin-left: 25vw;
+}
+
+.resume.visible {
+  visibility: visible;
+}
+
 .hobbies {
   background-color: black;
   color: white;
