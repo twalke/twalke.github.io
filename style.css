@@ -8,14 +8,6 @@ body {
 #buttonDiv {
   text-align: center;
   padding-top: 30px;
-
-  /* CHECK THIS OUT */
-  /* Normally you have everything ordered vertically in the order it is in the html.
-  Since your name came after the buttons they were correspondingly below the buttons on the webpage.
-  If you want to reorder the layout non-vertically you have to use the "float" property.
-  In this case I floated the buttons to the left so that the div immediately following would move to the right instead of to the bottom.*/
-
-
 }
 
 a {
@@ -46,7 +38,6 @@ a {
 }
 
 #landingPage h1 {
-  /* margin-top: 5vh; */
   font-size: 100px;
   float: none;
 }
