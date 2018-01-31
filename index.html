@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Heebo:light" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
+<script src="email.php"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -15,14 +16,14 @@
 <div id="buttonDiv">
   <button class="button" onclick="onAboutClick()">About Me</button>
   <button class="button" onclick="onResumeClick()">Resume</button>
-  <button class="button"  onclick="onProjectsClick()">Projects</button>
+  <button class="button" onclick="onProjectsClick()">Projects</button>
   <a target="_blank" href="https://github.com/twalke" class="button">GitHub</a>
   <a target="_blank" href="mailto:tyler.walke@gmail.com" class="button">Email</a>
+  <!--<button class="button" onclick="onEmailClick()">Email</button>-->
 </div>
 
 <div id="landingPage">
   <h1>TYLER WALKE</h1>
-
   <div class="about" id="about2">
     <div id="description"><h2> About Me </h2></div>
     <div class="pg">I'm a Computer Science student at Utah Valley University and I love two things: code and the outdoors.</div>
@@ -31,7 +32,7 @@
   </div>
 
   <div class="resume" id="resume2">
-    <object data="Resume_TylerWalke_January2018_v5.pdf" type="application/pdf" >
+    <object data="Resume_TylerWalke_January2018_v5.pdf" type="application/pdf" width="100%" height="100%">
         alt : <a href="Resume_TylerWalke_January2018_v5.pdf">Resume</a>
     </object>
   </div>
@@ -54,6 +55,22 @@
   order to split group bills such as utilities and restaurant checks.</li>
   </ol></div>
   </div>
+
+  <div class="email" id="email2">
+  <form action="action_page.php">
+    <div id="emailInfo">Email me directly at <strong>tyler.walke@gmail.com</strong> or leave a message below.</div>
+    <br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.">
+    <label for="company">Company</label>
+    <input type="text" id="company" name="yourCompany" placeholder="Your company.">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something here." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </div>
 
 </body>

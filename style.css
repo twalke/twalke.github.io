@@ -37,6 +37,10 @@ a {
   background: orange;
 }
 
+#landingPage {
+  height: 100vh;
+}
+
 #landingPage h1 {
   font-size: 100px;
   float: none;
@@ -140,10 +144,10 @@ li a{
   background-color: black;
   visibility: hidden;
   position: absolute;
-  display: flex;
+  display:flex;
   margin: auto;
   width: 50vw;
-  height: 50vh;
+  height: 88vh;
   margin-left: 25vw;
 }
 
@@ -169,3 +173,48 @@ li a{
 .hobbies.visible {
   visibility: visible;
 }
+
+.email {
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid white;
+    width: 55%;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.email.visible {
+  visibility: visible;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */
+    text-align: left;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #DE6000;
+}
+
+/* Add a background color and some padding around the form */
