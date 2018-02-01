@@ -41,6 +41,10 @@ a {
   height: 100vh;
 }
 
+#title {
+  margin-top: 50px;
+}
+
 #landingPage h1 {
   font-size: 100px;
   float: none;
@@ -147,7 +151,7 @@ li a{
   display:flex;
   margin: auto;
   width: 50vw;
-  height: 88vh;
+  height: 135vh;
   margin-left: 25vw;
 }
 
