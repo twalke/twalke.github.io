@@ -23,7 +23,7 @@
   }
 
   function onResumeClick() {
-    $(".resume").toggleClass("visible");
+    $(".fullResume").toggleClass("visible");
     if($("#about2").hasClass("visible")) {
       $(".about").toggleClass("visible");
     } else if($("#projects2").hasClass("visible")) {
@@ -48,9 +48,9 @@
 //  $("#title").slideUp();
 //});
 
-//  $("button").click(onAboutClick()) {
-//    $("title").animate({left:'50px'});
-//  }
+//  $("button").click(onAboutClick() {
+//    $("title").animate({up:'50px'};
+//  });
 
 
 

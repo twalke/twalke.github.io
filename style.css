@@ -10,8 +10,114 @@ body {
   padding-top: 30px;
 }
 
+.resumeDownload {
+  background-color: black;
+  padding: 1vw 3vw 1vw 3vw;
+  width: 41vw;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+#resumeDownloadText {
+  font-size: 3vh;
+  float: left;
+  color: white;
+}
+
+#downloadButton {
+  text-align: center;
+  float: right;
+}
+
 a {
   text-decoration: none;
+}
+
+.fullResume {
+  visibility: hidden;
+}
+
+.fullResume.visible {
+  visibility: visible;
+}
+
+.resumeHeaders {
+  float: left;
+  margin-left: 25.7vw;
+  width: 7vw;
+  height: 164.3vh;
+  padding: 2vw;
+}
+
+.rightText {
+  background-color: white;
+  width: 30.73vw;
+  height: 165vh;
+  margin-left: 32vw;
+  padding: 6vh 5vw 2vh 5vw;
+  font-size: 2vh;
+}
+
+#nameHead {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3.5vh;
+}
+
+#eduHead {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3vh;
+  margin-top: -1vh;
+}
+
+#workHead {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3vh;
+  margin-top: 12vh;
+}
+
+#skillsHead {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3vh;
+  margin-top: 61vh;
+}
+
+#projectsHead {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3vh;
+  margin-top: 12vh;
+}
+
+#eduText {
+  margin-top: 5vh;
+}
+
+#workText {
+  margin-top: 5vh;
+}
+
+#skillsText {
+  margin-top: 5vh;
+}
+
+#projectsText {
+  margin-top: 5vh;
+}
+
+#resumeHeader h3 {
+  font-size: 4vh;
+
+}
+
+#resumeHC h3 {
+  font-size: 4vh;
+  font-family: 'Heebo', sans-serif;
+  font-size: 2.5vh;
+  display: inline-block;
 }
 
 .button {
@@ -39,15 +145,12 @@ a {
 
 #landingPage {
   height: 100vh;
+  position: relative;
 }
 
 #title {
   margin-top: 50px;
-}
-
-#landingPage h1 {
-  font-size: 100px;
-  float: none;
+  position: relative;
 }
 
 #landingPage h1 {
@@ -55,7 +158,8 @@ a {
   font-family: 'Heebo', sans-serif;
   height: 100px;
   text-align: center;
-
+  font-size: 100px;
+  float: none;
 }
 
 #content h1 {
