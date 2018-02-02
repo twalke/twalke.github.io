@@ -8,12 +8,13 @@ body {
 #buttonDiv {
   text-align: center;
   padding-top: 30px;
+  margin-right: 4vw;
 }
 
 .resumeDownload {
   background-color: black;
-  padding: 1vw 3vw 1vw 3vw;
-  width: 39vw;
+  padding: 2vw 3vw 2vw 3vw;
+  width: 54vw;
   height: 10vh;
   margin-left: 4vw
 }
@@ -28,6 +29,10 @@ body {
   text-align: center;
   float: right;
   border: 2px solid white;
+}
+
+#landingPage {
+  height: 10vh;
 }
 
 a {
@@ -123,6 +128,7 @@ td {
 #title {
   margin-top: 50px;
   position: relative;
+  margin-right: 4vw;
 }
 
 #landingPage h1 {
@@ -156,28 +162,9 @@ td {
 }
 
 ul {
-margin: 0;
-  padding: 0;
-  text-align:left;
-  font-family: 'Heebo', sans-serif;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color:#00000085;
-  position:fixed;
-  top:0;
-  width:100%
-}
-
-li {
-    display: inline;
-
-}
-li a{
-  text-decoration: none;
-  color:white;
-  padding:20px;
-
+  list-style-type: square;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
 }
 
 .about {
@@ -215,10 +202,11 @@ li a{
 }
 
 .fullResume {
-  margin-left: 22.5vw;
-  width: 45vw;
+  margin-left: 13.1vw;
+  width: 60vw;
   visibility: hidden;
   position: absolute;
+  margin-bottom: 5vh;
 }
 
 .fullResume.visible {
