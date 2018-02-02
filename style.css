@@ -13,9 +13,10 @@ body {
 .resumeDownload {
   background-color: black;
   padding: 2vw 3vw 2vw 3vw;
-  width: 54vw;
+
   height: 10vh;
-  margin-left: 4vw
+  margin-left: 4vw;
+  margin-right: -4vw;
 }
 
 #resumeDownloadText {
@@ -200,8 +201,9 @@ ul {
 }
 
 .fullResume {
-  margin-left: 15vw;
+  margin-left: 20vw;
   width: 60vw;
+  max-width: 960px;
   visibility: hidden;
   position: absolute;
   margin-bottom: 5vh;
