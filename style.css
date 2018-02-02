@@ -8,7 +8,6 @@ body {
 #buttonDiv {
   text-align: center;
   padding-top: 30px;
-  margin-right: 4vw;
 }
 
 .resumeDownload {
@@ -128,7 +127,6 @@ td {
 #title {
   margin-top: 50px;
   position: relative;
-  margin-right: 4vw;
 }
 
 #landingPage h1 {
@@ -202,7 +200,7 @@ ul {
 }
 
 .fullResume {
-  margin-left: 13.1vw;
+  margin-left: 15vw;
   width: 60vw;
   visibility: hidden;
   position: absolute;
