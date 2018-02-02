@@ -134,10 +134,8 @@ a {
 }
 
 ::selection {
-  background: orange;
+  background: #E87C00;
 }
-
-
 
 #title {
   margin-top: 50px;
@@ -206,8 +204,8 @@ li a{
   border: 0px;
   padding: 1vh 3vw 4vh 3vw;
   margin-top:3vw;
-  margin-left: 27vw;
-  margin-right: 27vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
   visibility: hidden;
   position: absolute;
 }
@@ -222,8 +220,8 @@ li a{
   text-align: left;
   border: 0px;
   margin-top:3vw;
-  margin-left: 27vw;
-  margin-right: 27vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
   padding: 1vh 3vw 4vh 3vw;
   visibility: hidden;
   position: absolute;
