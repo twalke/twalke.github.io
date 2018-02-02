@@ -13,9 +13,9 @@ body {
 .resumeDownload {
   background-color: black;
   padding: 1vw 3vw 1vw 3vw;
-  width: 41vw;
+  width: 39vw;
   height: 10vh;
-  margin-left: 25.7vw;
+  margin-left: 4vw
 }
 
 #resumeDownloadText {
@@ -37,69 +37,52 @@ a {
 .resumeHeaders {
   float: left;
   margin-left: 25.7vw;
-  width: 7vw;
-  height: 164.3vh;
-  padding: 2vw;
+  width: 15vw;
+}
+
+.leftText {
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  width: 5vw;
+  text-align: left;
+  font-size: 3vh;
+  vertical-align: top;
 }
 
 .rightText {
   background-color: white;
-  width: 30.73vw;
-  height: 165vh;
-  margin-left: 32vw;
-  padding: 6vh 5vw 2vh 5vw;
   font-size: 2vh;
+  width: 25vw;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 4vw;
+}
+
+th {
+  border-right: 1px solid black;
+  padding-top: 1vh;
+  padding-left: 2vw;
+
+}
+
+td {
+  padding: 1vh 2vw 5vh 2vw;
 }
 
 #nameHead {
-  background-color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 3.5vh;
-}
-
-#eduHead {
-  background-color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 3vh;
-  margin-top: -1vh;
-}
-
-#workHead {
-  background-color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 3vh;
-  margin-top: 12vh;
-}
-
-#skillsHead {
-  background-color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 3vh;
-  margin-top: 61vh;
-}
-
-#projectsHead {
-  background-color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 3vh;
-  margin-top: 12vh;
-}
-
-#eduText {
+  font-size: 4vh;
   margin-top: 5vh;
+  border-right: 3px solid black;
+  vertical-align: middle;
 }
 
-#workText {
-  margin-top: 5vh;
+#spaceHead {
+  border-right: 3px solid white;
 }
 
-#skillsText {
-  margin-top: 5vh;
-}
 
-#projectsText {
-  margin-top: 5vh;
-}
 
 #resumeHeader h3 {
   font-size: 4vh;
@@ -232,6 +215,8 @@ li a{
 }
 
 .fullResume {
+  margin-left: 22.5vw;
+  width: 45vw;
   visibility: hidden;
   position: absolute;
 }
