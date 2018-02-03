@@ -170,8 +170,6 @@ ul {
   text-align: left;
   border: 0px;
   padding: 1vh 3vw 4vh 3vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
   visibility: hidden;
   position: absolute;
 }
@@ -185,8 +183,6 @@ ul {
   color: white;
   text-align: left;
   border: 0px;
-  margin-left: 30vw;
-  margin-right: 30vw;
   padding: 1vh 3vw 4vh 3vw;
   visibility: hidden;
   position: absolute;
