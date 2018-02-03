@@ -13,10 +13,8 @@ body {
 .resumeDownload {
   background-color: black;
   padding: 2vw 3vw 2vw 3vw;
-
   height: 10vh;
-  margin-left: 4vw;
-  margin-right: -4vw;
+
 }
 
 #resumeDownloadText {
@@ -62,7 +60,7 @@ a {
 
 table {
   border-collapse: collapse;
-  margin-left: 4vw;
+
 }
 
 th {
@@ -126,7 +124,7 @@ td {
 }
 
 #title {
-  margin-top: 50px;
+  margin-top: 10vh;
   position: relative;
 }
 
@@ -172,7 +170,6 @@ ul {
   text-align: left;
   border: 0px;
   padding: 1vh 3vw 4vh 3vw;
-  margin-top:3vw;
   margin-left: 30vw;
   margin-right: 30vw;
   visibility: hidden;
@@ -188,7 +185,6 @@ ul {
   color: white;
   text-align: left;
   border: 0px;
-  margin-top:3vw;
   margin-left: 30vw;
   margin-right: 30vw;
   padding: 1vh 3vw 4vh 3vw;

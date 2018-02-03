@@ -44,6 +44,18 @@
     }
   }
 
+
+/*  if($("#about2").hasClass("visible")||$("#projects2").hasClass("visible")||$("#fullResume").hasClass("visible")) {
+    $(document).ready(function(){
+      $("button").click(function(){
+          $("#title").animate({top: '250px'});
+      });
+  });
+}*/
+
+
+
+
 //$("button").click(onAboutClick()) {
 //  $("#title").slideUp();
 //});
