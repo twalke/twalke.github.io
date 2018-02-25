@@ -1,5 +1,3 @@
-
-
   function onAboutClick() {
     $(".about").toggleClass("visible");
     if($("#projects2").hasClass("visible")) {
@@ -68,7 +66,6 @@
       $(".about").toggleClass("visible");
     }
   }
-
 
 
 /*  if($("#about2").hasClass("visible")||$("#projects2").hasClass("visible")||$("table").hasClass("visible")) {
