@@ -125,6 +125,7 @@ td {
 
 #submitButton {
   margin-left: 15px;
+  margin-top: 15px;
 }
 
 .button:hover {
@@ -141,6 +142,7 @@ td {
   margin-top: -2vh;
   margin-bottom: 5vh;
   position: relative;
+
 }
 
 #landingPage h1 {
@@ -251,11 +253,11 @@ ul {
 }
 
  .hobbies {
-  background-color: black;
+
   color: white;
   text-align: left;
-  margin-left: 11vw;
-  margin-right: 11vw;
+  margin-left: 10.5vw;
+  margin-right: 10.5vw;
   margin-bottom: 20vw;
   visibility: hidden;
   position: absolute;
@@ -270,6 +272,17 @@ ul {
   height: auto;
   max-width: 33vw;
   max-height: 20vw;
+}
+
+.thumbnail:hover img {
+  transform: scale(.98);
+  z-index: 1;
+  position: relative;
+  border: .1vw solid white;
+}
+
+.thumbnail img {
+  transition: all .2s ease-in-out;
 }
 
 .email {
