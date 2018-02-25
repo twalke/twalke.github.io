@@ -203,7 +203,8 @@ ul {
 .about {
   background-color: black;
   color: white;
-  text-align: center;
+  vertical-align: middle;
+
   border: 0px;
   padding: 1vh 3vw 4vh 3vw;
   margin-left: 20vw;
@@ -215,6 +216,14 @@ ul {
 
 .about.visible {
   visibility: visible;
+}
+
+#aboutText {
+  margin-top: 2vw;
+}
+
+#aboutImage {
+  margin-top: 1vw;
 }
 
 .projects {
