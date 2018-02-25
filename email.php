@@ -7,10 +7,5 @@ $senderPhone = $_POST['senderPhone'];
 $company = $_POST['senderCompany'];
 $emailTextArea = $_POST['emailTextArea'];
 
-echo $name;
-echo $senderEmail;
-echo $senderPhone;
-echo $company;
-echo $emailTextArea;
 mail($to,$subject,$name,$senderEmail,$senderPhone,$company,$emailTextArea);
  ?>
