@@ -142,7 +142,10 @@ td {
   margin-top: -2vh;
   margin-bottom: 5vh;
   position: relative;
-
+  -webkit-animation-name: slideInUp;
+  -webkit-animation-duration: 2s;
+  animation-name: slideInUp;
+  animation-duration: 2s;
 }
 
 #landingPage h1 {
@@ -278,7 +281,7 @@ ul {
   transform: scale(.98);
   z-index: 1;
   position: relative;
-  border: .1vw solid white;
+  border: .2vw solid #DE6000;
 }
 
 .thumbnail img {
