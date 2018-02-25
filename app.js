@@ -4,10 +4,12 @@
     $(".about").toggleClass("visible");
     if($("#projects2").hasClass("visible")) {
       $(".projects").toggleClass("visible");
-    } else if($("#fullResume").hasClass("visible")) {
-      $(".fullResume").toggleClass("visible");
+    } else if($("table").hasClass("visible")) {
+      $("table").toggleClass("visible");
     } else if($("#email2").hasClass("visible")) {
       $(".email").toggleClass("visible");
+    } else if($("#hobbies2").hasClass("visible")) {
+      $(".hobbies").toggleClass("visible");
     }
   }
 
@@ -15,22 +17,30 @@
     $(".projects").toggleClass("visible");
     if($("#about2").hasClass("visible")) {
       $(".about").toggleClass("visible");
-    } else if($("#fullResume").hasClass("visible")) {
-      $(".fullResume").toggleClass("visible");
+    } else if($("table").hasClass("visible")) {
+      $("table").toggleClass("visible");
     } else if($("#email2").hasClass("visible")) {
       $(".email").toggleClass("visible");
+    } else if($("#hobbies2").hasClass("visible")) {
+      $(".hobbies").toggleClass("visible");
     }
   }
 
   function onResumeClick() {
-    $(".fullResume").toggleClass("visible");
+    $("table").toggleClass("visible");
     if($("#about2").hasClass("visible")) {
       $(".about").toggleClass("visible");
     } else if($("#projects2").hasClass("visible")) {
       $(".projects").toggleClass("visible");
     } else if($("#email2").hasClass("visible")) {
       $(".email").toggleClass("visible");
+    } else if($("#hobbies2").hasClass("visible")) {
+      $(".hobbies").toggleClass("visible");
     }
+  }
+
+  function onDownloadClick() {
+    window.open("Resume_TylerWalke_January2018_v5.pdf");
   }
 
   function onEmailClick() {
@@ -39,13 +49,29 @@
       $(".about").toggleClass("visible");
     } else if($("#projects2").hasClass("visible")) {
       $(".projects").toggleClass("visible");
-    } else if($("#fullResume").hasClass("visible")) {
-      $(".fullResume").toggleClass("visible");
+    } else if($("table").hasClass("visible")) {
+      $("table").toggleClass("visible");
+    } else if($("#hobbies2").hasClass("visible")) {
+      $(".hobbies").toggleClass("visible");
+    }
+  }
+
+  function onHobbiesClick() {
+    $(".hobbies").toggleClass("visible");
+    if($("#projects2").hasClass("visible")) {
+      $(".projects").toggleClass("visible");
+    } else if($("table").hasClass("visible")) {
+      $("table").toggleClass("visible");
+    } else if($("#email2").hasClass("visible")) {
+      $(".email").toggleClass("visible");
+    } else if($("#about2").hasClass("visible")) {
+      $(".about").toggleClass("visible");
     }
   }
 
 
-/*  if($("#about2").hasClass("visible")||$("#projects2").hasClass("visible")||$("#fullResume").hasClass("visible")) {
+
+/*  if($("#about2").hasClass("visible")||$("#projects2").hasClass("visible")||$("table").hasClass("visible")) {
     $(document).ready(function(){
       $("button").click(function(){
           $("#title").animate({top: '250px'});
@@ -88,3 +114,5 @@
   } else {
     $("#landingPage h1")margin-top: 30vh;
   }*/
+
+  // Open the Modal

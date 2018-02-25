@@ -1,8 +1,23 @@
-body {
+ body {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0) ), url('canyon_bw.jpeg');
         background-attachment: fixed;
   		background-size: cover;
   		font-family: 'Heebo', sans-serif;
+}
+
+.navbar-custom {
+    background-color: black;
+    padding-top: 2vh;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    font-size: 25px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
 }
 
 #buttonDiv {
@@ -12,15 +27,14 @@ body {
 
 .resumeDownload {
   background-color: black;
-  padding: 2vw 3vw 2vw 3vw;
-  height: 10vh;
-
+  /* padding: 2vw 3vw 2vw 3vw; */
+  height: 20vh;
 }
 
 #resumeDownloadText {
-  font-size: 3vh;
-  float: left;
+  font-size: 1.7vw;
   color: white;
+  margin-top: 5vh;
 }
 
 #resumeDownloadButton {
@@ -30,6 +44,7 @@ body {
 }
 
 #landingPage {
+  padding-top: 5vw;
   height: 10vh;
 }
 
@@ -46,21 +61,25 @@ a {
 .leftText {
   background-color: white;
   font-family: 'Heebo', sans-serif;
-  width: 5vw;
+  /* width: 5vw; */
   text-align: left;
   font-size: 3vh;
-  vertical-align: top;
+  padding-right: .5vw;
 }
 
 .rightText {
   background-color: white;
   font-size: 2vh;
-  width: 25vw;
+  width: 43vw;
 }
 
 table {
   border-collapse: collapse;
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60vw;
+  visibility: hidden;
+  margin-bottom: 5vh;
 }
 
 th {
@@ -99,24 +118,34 @@ td {
   display: inline-block;
 }
 
+#downloadHeader {
+  /* border-right: 1px solid white; */
+}
+
 .button {
   display: inline-block;
   background-color: black;
   font-family: 'Heebo', sans-serif;
   color: white;
-  border: 0px;
-  outline: none;
+  border: 2px solid white;
+  outline: none !important;
   border-radius: 0px;
-  font-size: 25px;
-  min-width:200px;
-  margin-right: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  font-size: 1.5vw;
+  min-width:15vw;
+  margin-right: 1vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 15px;
+}
+
+#submitButton {
+  margin-left: 15px;
 }
 
 .button:hover {
   background-color:#DE6000;
+  color: white;
+  text-decoration: none;
 }
 
 ::selection {
@@ -124,17 +153,19 @@ td {
 }
 
 #title {
-  margin-top: 10vh;
+  margin-top: -2vh;
+  margin-bottom: 5vh;
   position: relative;
 }
 
 #landingPage h1 {
   color: white;
   font-family: 'Heebo', sans-serif;
-  height: 100px;
+  /* height: 100px; */
   text-align: center;
-  font-size: 100px;
+  font-size: 7vw;
   float: none;
+  font-weight: bold;
 }
 
 #content h1 {
@@ -148,18 +179,23 @@ td {
 }
 
 #landingPage h2 {
-  font-size: 25px;
+  font-size: 2.5vw;
   height: 4vh;
   color: white;
   text-align: center;
+  font-weight: bold;
 }
 
 #content h2 {
   text-align: center;
 }
 
+h4 {
+  font-weight: bold;
+  font-size:  1.5vw;
+}
+
 ul {
-  list-style-type: square;
   margin-top: 0vh;
   margin-bottom: 0vh;
 }
@@ -167,13 +203,14 @@ ul {
 .about {
   background-color: black;
   color: white;
-  text-align: left;
+  text-align: center;
   border: 0px;
   padding: 1vh 3vw 4vh 3vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
   visibility: hidden;
   position: absolute;
+  font-size: 1vw;
 }
 
 .about.visible {
@@ -185,11 +222,12 @@ ul {
   color: white;
   text-align: left;
   border: 0px;
-  margin-left: 30vw;
+  margin-left: 25.5vw;
   margin-right: 30vw;
   padding: 1vh 3vw 4vh 3vw;
   visibility: hidden;
   position: absolute;
+  font-size: 1vw;
 }
 
 .projects.visible {
@@ -197,11 +235,10 @@ ul {
 }
 
 .fullResume {
-  margin-left: 20vw;
   width: 60vw;
-  max-width: 960px;
+  /* max-width: 960px; */
   visibility: hidden;
-  position: absolute;
+  /* position: absolute; */
   margin-bottom: 5vh;
 }
 
@@ -224,17 +261,13 @@ ul {
   visibility: visible;
 }
 
-.hobbies {
+ .hobbies {
   background-color: black;
   color: white;
   text-align: left;
-  border: 2px solid white;
-  padding-top:1vh;
-  margin-left: 35vw;
-  margin-right: 20vw;
-  padding-left: 3vw;
-  padding-bottom:4vh;
-  padding-right: 3vw;
+  margin-left: 11vw;
+  margin-right: 11vw;
+  margin-bottom: 20vw;
   visibility: hidden;
   position: absolute;
 }
@@ -243,23 +276,51 @@ ul {
   visibility: visible;
 }
 
+.hobbies img {
+  width: auto;
+  height: auto;
+  max-width: 33vw;
+  max-height: 20vw;
+}
+
 .email {
     background-color: black;
     color:white;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    border: 2px solid white;
+    font-size: 1.2vw;
+    margin-left: 22.5vw;
     width: 55%;
     padding: 20px;
     visibility: hidden;
+    position: absolute;
+}
+
+.form-control {
+  border-radius: 0px;
 }
 
 .email.visible {
   visibility: visible;
 }
 
+figure {
+  text-align: center;
+}
 
+img {
+  width: 15vw;
+}
+
+.vitals {
+  float: right;
+  text-align: center;
+  margin-left: 1vw;
+}
+
+.edu {
+  float: right;
+  text-align: center;
+  margin-left: 1vw;
+}
 
 input[type=text], select, textarea {
     width: 50%; /* Full width */
@@ -287,3 +348,5 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
+
+/******************************************************************/
