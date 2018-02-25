@@ -10,11 +10,6 @@
     padding-top: 2vh;
 }
 
-.navbar-custom .navbar-nav .nav-link {
-    color: white;
-    font-size: 25px;
-}
-
 #buttonDiv {
   text-align: center;
   padding-top: 30px;
@@ -38,8 +33,7 @@
 }
 
 #landingPage {
-  padding-top: 5vw;
-  height: 10vh;
+  padding-top: 2vw;
 }
 
 a {
@@ -139,8 +133,6 @@ td {
 }
 
 #title {
-  margin-top: -2vh;
-  margin-bottom: 5vh;
   position: relative;
   -webkit-animation-name: slideInUp;
   -webkit-animation-duration: 2s;
@@ -151,7 +143,6 @@ td {
 #landingPage h1 {
   color: white;
   font-family: 'Heebo', sans-serif;
-  /* height: 100px; */
   text-align: center;
   font-size: 7vw;
   float: none;
@@ -206,12 +197,12 @@ ul {
   visibility: visible;
 }
 
-#aboutText {
-  margin-top: 1.5vw;
-}
-
 #aboutImage {
   margin-top: 1vw;
+}
+
+#aboutText {
+  margin-top: 1.5vw;
 }
 
 .projects {
@@ -256,7 +247,6 @@ ul {
 }
 
  .hobbies {
-
   color: white;
   text-align: left;
   margin-left: 10.5vw;
