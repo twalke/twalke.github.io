@@ -14,11 +14,6 @@
     color: white;
     font-size: 25px;
 }
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: white;
-}
 
 #buttonDiv {
   text-align: center;
@@ -27,7 +22,6 @@
 
 .resumeDownload {
   background-color: black;
-  /* padding: 2vw 3vw 2vw 3vw; */
   height: 20vh;
 }
 
@@ -61,7 +55,6 @@ a {
 .leftText {
   background-color: white;
   font-family: 'Heebo', sans-serif;
-  /* width: 5vw; */
   text-align: left;
   font-size: 3vh;
   padding-right: .5vw;
@@ -86,7 +79,6 @@ th {
   border-right: 1px solid black;
   padding-top: 1vh;
   padding-left: 2vw;
-
 }
 
 td {
@@ -104,11 +96,8 @@ td {
   border-right: 3px solid white;
 }
 
-
-
 #resumeHeader h3 {
   font-size: 4vh;
-
 }
 
 #resumeHC h3 {
@@ -116,10 +105,6 @@ td {
   font-family: 'Heebo', sans-serif;
   font-size: 2.5vh;
   display: inline-block;
-}
-
-#downloadHeader {
-  /* border-right: 1px solid white; */
 }
 
 .button {
@@ -204,11 +189,9 @@ ul {
   background-color: black;
   color: white;
   vertical-align: middle;
-
-  border: 0px;
   padding: 1vh 3vw 4vh 3vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   visibility: hidden;
   position: absolute;
   font-size: 1vw;
@@ -219,7 +202,7 @@ ul {
 }
 
 #aboutText {
-  margin-top: 2vw;
+  margin-top: 1.5vw;
 }
 
 #aboutImage {
@@ -230,9 +213,8 @@ ul {
   background-color: black;
   color: white;
   text-align: left;
-  border: 0px;
-  margin-left: 25.5vw;
-  margin-right: 30vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   padding: 1vh 3vw 4vh 3vw;
   visibility: hidden;
   position: absolute;
@@ -245,9 +227,7 @@ ul {
 
 .fullResume {
   width: 60vw;
-  /* max-width: 960px; */
   visibility: hidden;
-  /* position: absolute; */
   margin-bottom: 5vh;
 }
 
@@ -330,32 +310,3 @@ img {
   text-align: center;
   margin-left: 1vw;
 }
-
-input[type=text], select, textarea {
-    width: 50%; /* Full width */
-    padding: 12px; /* Some padding */
-    text-align: left;
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: 2px solid white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #DE6000;
-}
-
-/* Add a background color and some padding around the form */
-
-/******************************************************************/
