@@ -364,6 +364,9 @@ img {
   #resumeDownloadText {
     font-size: 14px !important;
   }
+  #resumeDownloadButton {
+    font-size: 14px !important;
+  }
   td.rightText {
     font-size: 15px;
   }
@@ -405,6 +408,9 @@ img {
   #resumeDownloadText {
     font-size: 12px !important;
   }
+  #resumeDownloadButton {
+    font-size: 10px !important;
+  }
   td.rightText {
     font-size: 12px;
   }
@@ -423,7 +429,7 @@ img {
    margin-left: 12.5vw;
   }
   .button {
-    font-size: 12px !important;
+    font-size: 11px !important;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px;
