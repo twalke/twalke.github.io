@@ -212,7 +212,6 @@ h4 {
   margin-right: 25vw;
   visibility: hidden;
   position: absolute;
-  /* font-size: 1.1vw; */
   font-size: 18px;
 }
 
@@ -336,6 +335,9 @@ img {
     margin-left: 15vw;
     margin-right: 15vw;
   }
+  #landingPage h2 {
+    font-size: 30px;
+  }
   #resumeDownloadText {
     font-size: 16px !important;
   }
@@ -355,6 +357,9 @@ img {
     font-size: 14px !important;
     margin-left: 10vw;
     margin-right: 10vw;
+  }
+  #landingPage h2 {
+    font-size: 25px;
   }
   #resumeDownloadText {
     font-size: 14px !important;
@@ -393,6 +398,9 @@ img {
     font-size: 12px !important;
     margin-left: 5vw;
     margin-right: 5vw;
+  }
+  #landingPage h2 {
+    font-size: 20px;
   }
   #resumeDownloadText {
     font-size: 12px !important;
