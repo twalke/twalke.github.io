@@ -383,6 +383,7 @@ img {
   }
   #resumeDownloadButton {
     font-size: 10px !important;
+    width: 25vw;
   }
   table {
     min-width: 90vw;
