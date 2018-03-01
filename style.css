@@ -131,7 +131,6 @@ td {
 }
 
 .button {
-  display: inline-block;
   background-color: black;
   font-family: 'Heebo', sans-serif;
   color: white;
@@ -140,7 +139,6 @@ td {
   border-radius: 0px;
   font-size: 25px;
   width:15vw;
-  margin-right: 1vw;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 15px;
@@ -428,6 +426,8 @@ img {
     font-size: 12px !important;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   img {
     width: 30vw;
