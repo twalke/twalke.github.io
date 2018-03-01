@@ -1,10 +1,3 @@
-// var menu = $('.wrapper div');
-//
-// menu.on('click', function() {
-//   var menuNum = $(this).data('menu');
-//   $(this).toggleClass('menu-'+ menuNum +'-active');
-// })
-
   function onAboutClick() {
     $(".about").toggleClass("visible");
     if($("#projects2").hasClass("visible")) {
