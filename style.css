@@ -12,11 +12,6 @@
   padding-left: 1vw;
 }
 
-#buttonDiv {
-  text-align: center;
-  padding-top: 30px;
-}
-
 .resumeDownload {
   background-color: black;
   height: 20vh;
@@ -36,10 +31,6 @@
 
 #landingPage {
   padding-top: 2vw;
-}
-
-a {
-  text-decoration: none;
 }
 
 .resumeHeaders {
@@ -232,6 +223,7 @@ h4 {
     width: 55%;
     padding: 20px;
     position: absolute;
+    margin-bottom: 2vh;
 }
 
 .form-control {
@@ -244,18 +236,6 @@ figure {
 
 img {
   width: 20vw;
-}
-
-.vitals {
-  float: right;
-  text-align: center;
-  margin-left: 1vw;
-}
-
-.edu {
-  float: right;
-  text-align: center;
-  margin-left: 1vw;
 }
 
 @media screen and (max-width:1200px){
@@ -362,8 +342,9 @@ img {
     margin-right: 17.5vw;
   }
   .email {
-   width: 75%;
-   margin-left: 12.5vw;
+   width: 90vw;
+   margin-left: 5vw;
+   padding: 10px;
   }
   .button {
     font-size: 11px !important;
@@ -376,7 +357,7 @@ img {
     width: 30vw;
   }
   #submitButton {
-    width: 75vw;
+    width: 85vw;
     margin-right: 15px;
   }
 }

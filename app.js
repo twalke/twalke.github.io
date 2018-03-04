@@ -46,6 +46,6 @@ function onEmailClick() {
   $(".hobbies").hide();
 }
 
-  function onDownloadClick() {
-    window.open("Resume_TylerWalke_January2018_v5.pdf");
-  }
+function onDownloadClick() {
+  window.open("Resume_TylerWalke_January2018_v5.pdf");
+}
