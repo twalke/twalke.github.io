@@ -375,6 +375,9 @@ img {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .navbar-custom {
+      margin-left: -6vw;
+  }
   #landingPage h2 {
     font-size: 20px;
   }
