@@ -67,7 +67,7 @@ table {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-  visibility: hidden;
+  /* visibility: hidden; */
   margin-bottom: 5vh;
 }
 
@@ -183,7 +183,7 @@ h4 {
   padding: 1vh 3vw 4vh 3vw;
   margin-left: 25vw;
   margin-right: 25vw;
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
   font-size: 18px;
 }
@@ -199,7 +199,7 @@ h4 {
   margin-left: 25vw;
   margin-right: 25vw;
   padding: 1vh 3vw 4vh 3vw;
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
   font-size: 18px;
 }
@@ -220,7 +220,7 @@ h4 {
 
 .resume {
   background-color: black;
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
   display:flex;
   margin: auto;
@@ -237,7 +237,7 @@ h4 {
   margin-left: 10.5vw;
   margin-right: 10.5vw;
   margin-bottom: 3vh;
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
 }
 
@@ -270,7 +270,7 @@ h4 {
     margin-left: 22.5vw;
     width: 55%;
     padding: 20px;
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
 }
 
