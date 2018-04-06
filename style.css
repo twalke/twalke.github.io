@@ -173,6 +173,7 @@ h4 {
   padding: 1vh 3vw 4vh 3vw;
   margin-left: 25vw;
   margin-right: 25vw;
+  margin-bottom: 5vh;
   position: absolute;
   font-size: 18px;
 }
@@ -183,6 +184,7 @@ h4 {
   text-align: left;
   margin-left: 25vw;
   margin-right: 25vw;
+  margin-bottom: 5vh;
   padding: 1vh 3vw 4vh 3vw;
   position: absolute;
   font-size: 18px;
