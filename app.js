@@ -47,5 +47,5 @@ function onEmailClick() {
 }
 
 function onDownloadClick() {
-  window.open("Resume_TylerWalke_January2018_v5.pdf");
+  window.open("Resume_Tyler_Walke.pdf");
 }
