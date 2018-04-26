@@ -1,7 +1,7 @@
 $(document).ready(function() {
    $(".about").hide();
    $(".projects").hide();
-   $("table").hide();
+   $(".resume").hide();
    $(".hobbies").hide();
    $(".email").hide();
  });
@@ -9,13 +9,13 @@ $(document).ready(function() {
 function onAboutClick() {
   $(".about").toggle();
   $(".projects").hide();
-  $("table").hide();
+  $(".resume").hide();
   $(".hobbies").hide();
   $(".email").hide();
 }
 
 function onResumeClick() {
-  $("table").toggle();
+  $(".resume").toggle();
   $(".about").hide();
   $(".projects").hide();
   $(".hobbies").hide();
@@ -25,7 +25,7 @@ function onResumeClick() {
 function onProjectsClick() {
   $(".projects").toggle();
   $(".about").hide();
-  $("table").hide();
+  $(".resume").hide();
   $(".hobbies").hide();
   $(".email").hide();
 }
@@ -34,7 +34,7 @@ function onHobbiesClick() {
   $(".hobbies").toggle();
   $(".about").hide();
   $(".projects").hide();
-  $("table").hide();
+  $(".resume").hide();
   $(".email").hide();
 }
 
