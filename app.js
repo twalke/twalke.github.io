@@ -42,7 +42,7 @@ function onEmailClick() {
   $(".email").toggle();
   $(".about").hide();
   $(".projects").hide();
-  $("table").hide();
+  $(".resume").hide();
   $(".hobbies").hide();
 }
 
