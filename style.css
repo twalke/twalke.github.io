@@ -179,8 +179,6 @@
   margin-bottom: 2vh;
 }
 
-
-
 .button {
   background-color: black;
   font-family: 'Heebo', sans-serif;
@@ -272,7 +270,9 @@ img {
   .about {
     font-size: 14px !important;
   }
-
+  .hobbies {
+    grid-column: 2/11;
+  }
   #resumeDownloadText {
     font-size: 14px !important;
   }
@@ -316,6 +316,12 @@ img {
   }
   #resumeDownloadButton {
     font-size: 10px !important;
+  }
+  .resume {
+    grid-column: 2/11;
+  }
+  .hobbies {
+    grid-column: 2/11;
   }
   #nameHead {
   font-size: 20px !important;
