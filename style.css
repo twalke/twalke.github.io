@@ -309,6 +309,7 @@ img {
   }
   .about {
     font-size: 12px !important;
+    grid-column: 2/11;
   }
   #resumeDownloadText {
     font-size: 12px !important;
@@ -337,6 +338,7 @@ img {
   }
   .projects {
     font-size: 12px !important;
+    grid-column: 2/11;
   }
   .button {
     font-size: 11px !important;
