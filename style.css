@@ -499,11 +499,12 @@ textarea {
   }
   .email {
     grid-column: 2/13;
-    grid-row: 3/4;
   }
   .hobbies {
     grid-column: 2/13;
-    grid-row: 3/4;
+  }
+  .hobbies h1 {
+    margin-left: 30vw;
   }
   #thumbnail1 {
     grid-column: 1/4;
@@ -528,7 +529,9 @@ textarea {
   }
   .projects {
     grid-column: 2/13;
-    grid-row: 3/4;
+  }
+  .projects h1 {
+    margin-left: 30vw;
   }
   .resume {
     grid-column: 1/14;
@@ -538,6 +541,9 @@ textarea {
   }
   .active {
     height: 65vh;
+  }
+  .email h1 {
+    margin-left: 30vw;
   }
 }
 
@@ -553,6 +559,7 @@ textarea {
   }
   h1 {
     font-size: 50px;
+    margin-left: 35vw;
   }
   h2 {
     font-size: 20px;
@@ -582,39 +589,43 @@ textarea {
   }
   .about {
     grid-column: 2/13;
-    grid-row: 3/4;
     text-align: left;
     padding-left: 0;
     padding-right: 0;
-    /* margin-top: -150px; */
   }
   .about img {
     width: 150px;
+    margin-left: 18vw;
   }
   figcaption {
-    margin-left: 5vw;
+    margin-left: 23vw;
   }
   .resume {
     grid-column: 1/14;
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-left: 30px;
     margin-right: 30px;
-    height: 210vh;
+    height: 330vh;
   }
   hr {
     height: 5px;
   }
-  .hobbies {
-    grid-row: 3/4;
+  #subText {
+    margin-top: 5vh;
   }
   .email {
     grid-column: 2/13;
-    grid-row: 3/4;
+  }
+  #emailText {
+    margin-top: 5vh;
   }
   .email button {
     width: 84.5vw;
   }
+  textarea {
+    height: 15vh;
+  }
   .active {
-    height: 45vh;
+    height: 65vh;
   }
 }

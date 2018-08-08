@@ -5,8 +5,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<!-- <link href="https://fonts.googleapis.com/css?family=Heebo:bold" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Heebo:light" rel="stylesheet"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
 <script type="text/jscript" src="lightbox.min.js"></script>
@@ -16,8 +14,6 @@
 </head>
 
 <body>
-
-  <!-- <div class="container"> -->
     <div id="content">
       <div id="title">Tyler Walke</div>
       <div id="subTitle">Software Developer</div>
@@ -91,7 +87,9 @@
 
       <div class="email">
         <h1>Contact</h1>
-      <h2>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form below.</h2>
+      <div id="emailText">
+        <h2>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form below.</h2>
+      </div>
       <br>
       <form action="http://formspree.io/tyler.walke@gmail.com" method="post">
         <div class="row">
@@ -133,7 +131,9 @@
       <div class="hobbies">
         <div id="subHobbies">
           <h1>Hobbies</h1>
-          <h2>A lot of my spare time is spent in the Utah wilderness. Here are a few pictures from my outdoor adventures.</h2>
+          <div id="subText">
+            <h2>A lot of my spare time is spent in the Utah wilderness. Here are a few pictures from my outdoor adventures.</h2>
+          </div>
         </div>
         <div class="thumbnail" id="thumbnail1">
           <a href="Hobbies/0.jpg" data-lightbox="gallery">
