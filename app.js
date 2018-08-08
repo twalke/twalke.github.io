@@ -4,46 +4,101 @@ $(document).ready(function() {
    $(".resume").hide();
    $(".hobbies").hide();
    $(".email").hide();
+
+	 $("#menuwrap").click(function() {
+     $("#menu").addClass(function(index, currentClass) {
+       if (currentClass === "hid")
+         $("#menu").removeClass("hid").addClass("active");
+       else
+         $("#menu").removeClass("active").addClass("hid");
+     });
+     $("#menuwrap").addClass(function(index, currentClass) {
+       if (currentClass === "hid2")
+         $("#menuwrap").removeClass("hid2").addClass("active2");
+       else
+         $("#menuwrap").removeClass("active2").addClass("hid2");
+     });
+     $("#text").addClass(function(index, currentClass) {
+       if (currentClass === "hidtext")
+         $("#text").removeClass("hidtext").addClass("shotext");
+       else
+         $("#text").removeClass("shotext").addClass("hidtext");
+       });
+     })
+
+     setTimeout(function(){
+       $("body").css("background-image", "url(tyler-paint-left.jpeg)");
+     }, 500);
  });
 
 function onAboutClick() {
-  $(".about").toggle();
+  $(".about").show();
   $(".projects").hide();
   $(".resume").hide();
   $(".hobbies").hide();
   $(".email").hide();
+	$("#title").hide();
+	$("#subTitle").hide();
+	$("#menu").removeClass("active").addClass("hid");
+  $("#menuwrap").removeClass("active2").addClass("hid2");
+  $("#text").removeClass("shotext").addClass("hidtext");
+  $("body").css("background-image", "url(canvas.jpeg)");
 }
 
 function onResumeClick() {
-  $(".resume").toggle();
-  $(".about").hide();
+  $(".resume").show();
   $(".projects").hide();
+  $(".about").hide();
   $(".hobbies").hide();
   $(".email").hide();
+	$("#title").hide();
+	$("#subTitle").hide();
+  $("#menu").removeClass("active").addClass("hid");
+  $("#menuwrap").removeClass("active2").addClass("hid2");
+  $("#text").removeClass("shotext").addClass("hidtext");
+	$("body").css("background-image", "url(canvas.jpeg)");
 }
 
 function onProjectsClick() {
-  $(".projects").toggle();
+  $(".projects").show();
   $(".about").hide();
   $(".resume").hide();
   $(".hobbies").hide();
   $(".email").hide();
+	$("#title").hide();
+	$("#subTitle").hide();
+	$("#menu").removeClass("active").addClass("hid");
+  $("#menuwrap").removeClass("active2").addClass("hid2");
+  $("#text").removeClass("shotext").addClass("hidtext");
+	$("body").css("background-image", "url(canvas.jpeg)");
 }
 
 function onHobbiesClick() {
-  $(".hobbies").toggle();
+  $(".hobbies").show();
   $(".about").hide();
   $(".projects").hide();
   $(".resume").hide();
   $(".email").hide();
+	$("#title").hide();
+	$("#subTitle").hide();
+	$("#menu").removeClass("active").addClass("hid");
+  $("#menuwrap").removeClass("active2").addClass("hid2");
+  $("#text").removeClass("shotext").addClass("hidtext");
+	$("body").css("background-image", "url(canvas.jpeg)");
 }
 
 function onEmailClick() {
-  $(".email").toggle();
+  $(".email").show();
   $(".about").hide();
   $(".projects").hide();
   $(".resume").hide();
   $(".hobbies").hide();
+	$("#title").hide();
+	$("#subTitle").hide();
+	$("#menu").removeClass("active").addClass("hid");
+  $("#menuwrap").removeClass("active2").addClass("hid2");
+  $("#text").removeClass("shotext").addClass("hidtext");
+	$("body").css("background-image", "url(canvas.jpeg)");
 }
 
 function onDownloadClick() {

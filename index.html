@@ -5,212 +5,93 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Heebo:bold" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Heebo:light" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Heebo:bold" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo:light" rel="stylesheet"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
 <script type="text/jscript" src="lightbox.min.js"></script>
 <link rel="stylesheet" href="lightbox.css">
-<link rel="stylesheet" href="animate.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 
 <body>
-  <div id="content">
-    <div class="nav">
-      <div id="aboutButton">
-        <button class="button" onclick="onAboutClick()">About</button>
-     </div>
-     <div id="resumeButton">
-        <button class="button" onclick="onResumeClick()">Resume</button>
-     </div>
-     <div id="projectsButton">
-      <button class="button" onclick="onProjectsClick()">Projects</button>
-     </div>
-     <div id="hobbiesButton">
-      <button class="button" onclick="onHobbiesClick()">Hobbies</button>
-     </div>
-     <div id="contactButton">
-      <button class="button" onclick="onEmailClick()">Contact</button>
-     </div>
-    </div>
-    <div id="background"></div>
 
-    <div id="title">TYLER WALKE</div>
+  <!-- <div class="container"> -->
+    <div id="content">
+      <div id="title">Tyler Walke</div>
+      <div id="subTitle">Software Developer</div>
+    <div id="menu" class="hid">
+      <span class="hidtext" id="text">
+        <a onclick="onAboutClick()" class="menuLinks">About</a>
+        <a onclick="onResumeClick()" class="menuLinks">Resume</a>
+        <a onclick="onProjectsClick()" class="menuLinks">Projects</a>
+        <a onclick="onHobbiesClick()" class="menuLinks">Hobbies</a>
+        <a onclick="onEmailClick()" class="menuLinks">Contact</a>
+      </span>
+      <div id="menuwrap" class="hid2">
+        <div class="menubar"></div>
+        <div class="menubar"></div>
+        <div class="menubar"></div>
+      </div>
+    </div>
+    <div id="placehold"></div>
 
     <div class="about">
-      <div class="description"><h2> About </h2></div>
-      <br><br>
+    <div class="description"><h1> About </h1></div>
+    <br><br>
       <div class="row">
-        <figure class="col-md-6" id="aboutImage">
-          <img src="profilePic.JPG" alt="Tyler Walke">
+        <figure class="col-md-12" id="aboutImage">
+          <div id="imageCrop"><img src="profilePic.JPG" alt="Tyler Walke"></div>
           <figcaption>Tyler Walke (left)</figcaption>
         </figure>
-        <div class="col-md-6" id="aboutText">
-          I'm a young software developer and I love two things: code and the outdoors.
+        <div class="col-md-12" id="aboutText">
+          <h2>I'm a young software developer and I love two things: code and the outdoors.
           My main areas of interest in the programing world are web development and mobile programming.
-          In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.
+          In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.</h2>
         </div>
       </div>
     </div>
 
     <div class="projects">
-      <div class="description"><h2> Projects </h2></div>
-      <br>
-      <p>You can view my GitHub <a target="_blank" href="https://github.com/twalke" style="color:#FF6E00">here</a>.</p>
-      <div id="description"> Sparky </div>
-        <div id"bs">
+        <div class="description"><h1> Projects </h1></div>
+        <br>
+        <h2>
+          Here are a few of the projects I've been working on in my spare time.
+          You can view my GitHub <a target="_blank" href="https://github.com/twalke" style="color:#DE6000"><strong>here</strong></a>.
+        </h2>
+        <hr>
+        <div class="description"><strong>Sparky</strong></div>
+          <div class="descText" id="bs">
+            <ul>
+              <li>Second Place at BYU hackathon in March 2018. </li>
+              <li>Built in Android Studio.</li>
+              <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group.</li>
+            </ul>
+        </div>
+        <div class="description"><strong>Canyon Guide</strong></div>
+        <div class="descText" id="cg">
           <ul>
-            <li>Second Place at BYU hackathon in March 2018. </li>
-            <li>Built in Android Studio.</li>
-            <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group.</li>
+            <li>Mobile app that uses crowdsourcing to help climbers find routes in their
+              area.</li>
+            <li>Built in Android Studio.
+            </li>
+            <li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
           </ul>
+        </div>
+        <div class="description"><strong>Bill Splitter</strong></div>
+          <div class="descText" id="bs">
+            <ul>
+              <li>Built in Android Studio. </li>
+              <li>Mobile app that allows users to add groups and payment information in
+                order to split group bills such as utilities and restaurant checks.</li>
+            </ul>
+        </div>
       </div>
-      <div id="description"> Canyon Guide </div>
-      <div id="cg">
-        <ul>
-          <li>Mobile app that uses crowdsourcing to help climbers find routes in their
-            area.</li>
-          <li>Built in Android Studio.
-          </li>
-          <li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
-        </ul>
-      </div>
-      <div id="description"> Bill Splitter </div>
-        <div id"bs">
-          <ul>
-            <li>Built in Android Studio. </li>
-            <li>Mobile app that allows users to add groups and payment information in
-              order to split group bills such as utilities and restaurant checks.</li>
-          </ul>
-      </div>
-    </div>
 
-    <div class="hobbies">
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/0.jpg" data-lightbox="gallery">
-          <img src="thumbnails/0.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/1.jpg" data-lightbox="gallery">
-          <img src="thumbnails/1.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/22.jpg" data-lightbox="gallery">
-          <img src="thumbnails/22.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/3.jpg" data-lightbox="gallery">
-          <img src="thumbnails/3.jpg" >
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/4.jpg" data-lightbox="gallery">
-          <img src="thumbnails/4.jpg" >
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/12.jpg" data-lightbox="gallery">
-          <img src="Hobbies/12.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/5.jpg" data-lightbox="gallery">
-          <img src="thumbnails/5.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/8.jpg" data-lightbox="gallery">
-          <img src="thumbnails/8.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/6.jpg" data-lightbox="gallery">
-          <img src="thumbnails/6.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/7.jpg" data-lightbox="gallery">
-          <img src="thumbnails/7.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/2.jpg" data-lightbox="gallery">
-          <img src="thumbnails/2.jpg" >
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/9.jpg" data-lightbox="gallery">
-          <img src="thumbnails/9.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/25.jpg" data-lightbox="gallery">
-          <img src="thumbnails/25.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/13.jpg" data-lightbox="gallery">
-          <img src="thumbnails/13.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/15.jpg" data-lightbox="gallery">
-          <img src="thumbnails/15.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/16.jpg" data-lightbox="gallery">
-          <img src="thumbnails/16.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/24.jpg" data-lightbox="gallery">
-          <img src="thumbnails/24.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/10.jpg" data-lightbox="gallery">
-          <img src="thumbnails/10.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/18.jpg" data-lightbox="gallery">
-          <img src="thumbnails/18.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/17.jpg" data-lightbox="gallery">
-          <img src="thumbnails/17.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail1">
-        <a href="Hobbies/20.jpg" data-lightbox="gallery">
-          <img src="thumbnails/20.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail2">
-        <a href="Hobbies/19.jpg" data-lightbox="gallery">
-          <img src="thumbnails/19.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail3">
-        <a href="Hobbies/21.jpg" data-lightbox="gallery">
-          <img src="thumbnails/21.jpg">
-        </a>
-      </div>
-      <div class="thumbnail" id="thumbnail4">
-        <a href="Hobbies/23.jpg" data-lightbox="gallery">
-          <img src="thumbnails/23.jpg">
-        </a>
-      </div>
-    </div>
-
-    <div class="email">
-      <p>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form below.</p>
+      <div class="email">
+        <h1>Contact</h1>
+      <h2>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form below.</h2>
       <br>
       <form action="http://formspree.io/tyler.walke@gmail.com" method="post">
         <div class="row">
@@ -249,6 +130,133 @@
       </form>
     </div>
 
+      <div class="hobbies">
+        <div id="subHobbies">
+          <h1>Hobbies</h1>
+          <h2>A lot of my spare time is spent in the Utah wilderness. Here are a few pictures from my outdoor adventures.</h2>
+        </div>
+        <div class="thumbnail" id="thumbnail1">
+          <a href="Hobbies/0.jpg" data-lightbox="gallery">
+            <img src="thumbnails/0.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail2">
+          <a href="Hobbies/1.jpg" data-lightbox="gallery">
+            <img src="thumbnails/1.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail3">
+          <a href="Hobbies/22.jpg" data-lightbox="gallery">
+            <img src="thumbnails/22.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail4">
+          <a href="Hobbies/3.jpg" data-lightbox="gallery">
+            <img src="thumbnails/3.jpg" >
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail5">
+          <a href="Hobbies/4.jpg" data-lightbox="gallery">
+            <img src="thumbnails/4.jpg" >
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail6">
+          <a href="Hobbies/12.jpg" data-lightbox="gallery">
+            <img src="thumbnails/12.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail1">
+          <a href="Hobbies/5.jpg" data-lightbox="gallery">
+            <img src="thumbnails/5.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail2">
+          <a href="Hobbies/8.jpg" data-lightbox="gallery">
+            <img src="thumbnails/8.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail3">
+          <a href="Hobbies/6.jpg" data-lightbox="gallery">
+            <img src="thumbnails/6.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail4">
+          <a href="Hobbies/7.jpg" data-lightbox="gallery">
+            <img src="thumbnails/7.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail5">
+          <a href="Hobbies/2.jpg" data-lightbox="gallery">
+            <img src="thumbnails/2.jpg" >
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail6">
+          <a href="Hobbies/9.jpg" data-lightbox="gallery">
+            <img src="thumbnails/19.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail1">
+          <a href="Hobbies/25.jpg" data-lightbox="gallery">
+            <img src="thumbnails/25.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail2">
+          <a href="Hobbies/13.jpg" data-lightbox="gallery">
+            <img src="thumbnails/13.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail3">
+          <a href="Hobbies/15.jpg" data-lightbox="gallery">
+            <img src="thumbnails/15.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail4">
+          <a href="Hobbies/16.jpg" data-lightbox="gallery">
+            <img src="thumbnails/16.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail5">
+          <a href="Hobbies/24.jpg" data-lightbox="gallery">
+            <img src="thumbnails/24.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail6">
+          <a href="Hobbies/10.jpg" data-lightbox="gallery">
+            <img src="thumbnails/10.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail1">
+          <a href="Hobbies/18.jpg" data-lightbox="gallery">
+            <img src="thumbnails/18.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail2">
+          <a href="Hobbies/17.jpg" data-lightbox="gallery">
+            <img src="thumbnails/17.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail3">
+          <a href="Hobbies/20.jpg" data-lightbox="gallery">
+            <img src="thumbnails/20.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail4">
+          <a href="Hobbies/19.jpg" data-lightbox="gallery">
+            <img src="thumbnails/9.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail5">
+          <a href="Hobbies/21.jpg" data-lightbox="gallery">
+            <img src="thumbnails/21.jpg">
+          </a>
+        </div>
+        <div class="thumbnail" id="thumbnail6">
+          <a href="Hobbies/23.jpg" data-lightbox="gallery">
+            <img src="thumbnails/23.jpg">
+          </a>
+        </div>
+      </div>
+
     <div class="resume">
       <div class="resumeHeader">
         <div id="resumeDownload">
@@ -261,10 +269,11 @@
       <div class="leftText" id="nameHead">
         <strong>Tyler<br>Walke</strong>
       </div>
-      <div class="rightText" id="contactText"><br><br>832.693.1724 <br>
+      <div class="rightText" id="contactText">832.693.1724 <br>
         tyler.walke@gmail.com <br>
         tylerwadewalke.com <br>
         github.com/twalke
+        <br>
       </div>
       <div class="leftText" id="eduHead">
         Education
@@ -336,6 +345,6 @@
         </ul>
       </div>
     </div>
-  </div>
+    </div>
 </body>
 </html>
