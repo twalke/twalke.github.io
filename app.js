@@ -26,9 +26,21 @@ $(document).ready(function() {
        });
      })
 
-     setTimeout(function(){
-       $("body").css("background-image", "url(tyler-paint-left.jpeg)");
-     }, 500);
+     function myFunction(x) {
+      if (x.matches) {
+        setTimeout(function(){
+          $("body").css("background-image", "url(tyler-paint-small.jpeg)");
+        }, 500);
+      } else {
+        setTimeout(function(){
+          $("body").css("background-image", "url(tyler-paint-left.jpeg)");
+        }, 500);
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x)
+    x.addListener(myFunction)
  });
 
 function onAboutClick() {
