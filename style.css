@@ -388,7 +388,6 @@ textarea {
   margin-bottom: 20px;
 }
 
-
 .button {
   background-color: black;
   color: white;
@@ -452,30 +451,8 @@ textarea {
 #subHobbies {
   grid-column: 7/19;
 }
-/* #thumbnail1:hover + #thumbnail2 {
-  transform: translateX(10vw);
-  transition: transform .4s ease-in-out;
-}
-#thumbnail2:hover + #thumbnail4 {
-  transform: translateX(10vw);
-  transition: transform .4s ease-in-out;
-} */
-/* #thumbnail41:hover + #thumbnail51 {
-  transform: translateX(10vw);
-  transition: transform .4s ease-in-out;
-  transform: translateY(10vw);
-} */
-/* #thumbnail1:hover + #thumbnail5 {
-  transform: translateX(10vw);
-  transition: transform .4s ease-in-out;
-}
-#thumbnail1:hover + #thumbnail6 {
-  transform: translateX(10vw);
-  transition: transform .4s ease-in-out;
-} */
 .thumbnail:hover img {
   transform: scale(3.5);
-  /* border: .07vw solid #DE6000; */
   box-shadow: 5px 5px 100px black;
 }
 .thumbnail img {
