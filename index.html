@@ -11,51 +11,81 @@
 </head>
 
 <body>
-    <div id="content">
-      <div id="title">Tyler Walke</div>
-      <div id="subTitle">Software Developer</div>
-    <div id="menu" class="hid">
-      <span class="hidtext" id="text">
-        <a onclick="onAboutClick()" class="menuLinks">About</a>
-        <a onclick="onResumeClick()" class="menuLinks">Resume</a>
-        <a onclick="onProjectsClick()" class="menuLinks">Projects</a>
-        <a onclick="onHobbiesClick()" class="menuLinks">Hobbies</a>
-        <a onclick="onEmailClick()" class="menuLinks">Contact</a>
-      </span>
-      <div id="menuwrap" class="hid2">
-        <div class="menubar"></div>
-        <div class="menubar"></div>
-        <div class="menubar"></div>
+  <div id="container">
+<!-- HOME SCREEN -->
+    <div id="frontScreen">
+      <div id="title">tyler walke</div>
+<!-- NAV BAR -->
+      <nav>
+        <a class="navButton" id="aboutTag" href="#aboutScreen">about</a>
+        <a class="navButton" id="projectsTag" href="#projectsScreen">projects</a>
+        <a class="navButton" id="resumeTag" href="#resumeScreen">resume</a>
+        <a class="navButton" id="contactTag" href="#contactScreen">contact</a>
+      </nav>
+<!-- FINN CSS ANIMATION -->
+      <div id="finn">
+        <div id="tailLeft"></div>
+        <div id="tailShadowLeft"></div>
+        <div id="tailWhiteLeft"></div>
+        <div id="tailRight"></div>
+        <div id="tailShadowRight"></div>
+        <div id="tailWhiteRight"></div>
+        <div id="backFeet"></div>
+        <div id="backLegs"></div>
+        <div id="backFeetShadow"></div>
+        <div id="backLegsShadow"></div>
+        <div id="body"></div>
+        <div id="leftEar"></div>
+        <div id="leftInnerEar"></div>
+        <div id="rightEar"></div>
+        <div id="rightInnerEar"></div>
+        <div id="head"></div>
+        <div id="leftFrontLeg"></div>
+        <div id="rightFrontLeg"></div>
+        <div id="frontFeet"></div>
+        <div id="chestOutline"></div>
+        <div id="chest"></div>
+        <div id="snoutShadow"></div>
+        <div id="nose"></div>
+        <div id="mouth"></div>
+        <div id="tongue"></div>
+        <div id="mouthTop"></div>
+        <div id="bentleyMark"></div>
+        <div id="collar"></div>
+        <div id="dogTag"></div>
+        <div id="neckLeft"></div>
+        <div id="neckRight"></div>
+        <div class="eyes" id="leftEye"></div>
+        <div class="eyes" id="rightEye"></div>
       </div>
     </div>
-    <div id="placehold"></div>
-
-    <div class="about">
-    <div class="description"><h1> About </h1></div>
-    <br><br>
-      <div class="row">
-        <figure class="col-md-12" id="aboutImage">
-          <div id="imageCrop"><img src="profilePic.JPG" alt="Tyler Walke"></div>
-          <figcaption>Tyler Walke (left)</figcaption>
-        </figure>
-        <div class="col-md-12" id="aboutText">
-          <h2>I'm a young software developer and I love two things: code and the outdoors.
-          My main areas of interest in the programing world are web development and mobile programming.
-          In my spare time I love to explore Utah's outdoor areas, canyoneer, snowboard, and climb.</h2>
+<!-- ABOUT ME -->
+    <div id="aboutScreen">
+      <div id="aboutTitle">About</div>
+      <div id="profileImage"><img src="profilePic.JPG" alt="picture of Tyler Walke"></div>
+      <!-- <div class="contentWhiteSpace"></div> -->
+      <div id="aboutContent">
+        <p>I'm a MERN full stack web developer. When I'm not coding you can usually find me exploring the Utah backcountry with my dog Finn.</p>
+        <p>Feel free to contact me about full-time employment opportunities or to collaborate on your next freelance project.</p>
+      </div>
+    </div>
+<!-- PROJECTS -->
+    <div id="projectsScreen">
+      <div id="projectsTitle">
+        <h2>Projects</h2>
+        <p>Here are a few of the projects I've been working on in my spare time. You can view my GitHub <a target="_blank" href="https://github.com/twalke"><strong>here</strong></a>.</p>
+      </div>
+      <div id="projectsContent">
+        <div class="description"><strong>BraverMountain Mushing</strong></div>
+          <div class="descText">
+            <ul>
+              <li>Freelance website built to promote the dog mushing and writing projects of Blair Braverman and Quince Mountain.</li>
+              <li>Built in HTML/CSS and JavaScript.</li>
+              <li>Uses twitter API to build custom modals to display long threads of tweets directly on the website without requiring the user to visit twitter or have an account.</li>
+            </ul>
         </div>
-      </div>
-    </div>
-
-    <div class="projects">
-        <div class="description"><h1> Projects </h1></div>
-        <br>
-        <h2>
-          Here are a few of the projects I've been working on in my spare time.
-          You can view my GitHub <a target="_blank" href="https://github.com/twalke" style="color:#DE6000"><strong>here</strong></a>.
-        </h2>
-        <hr>
         <div class="description"><strong>Sparky</strong></div>
-          <div class="descText" id="bs">
+          <div class="descText">
             <ul>
               <li>Second Place at BYU hackathon in March 2018. </li>
               <li>Built in Android Studio.</li>
@@ -63,7 +93,7 @@
             </ul>
         </div>
         <div class="description"><strong>Canyon Guide</strong></div>
-        <div class="descText" id="cg">
+        <div class="descText">
           <ul>
             <li>Mobile app that uses crowdsourcing to help climbers find routes in their
               area.</li>
@@ -72,246 +102,151 @@
             <li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
           </ul>
         </div>
-        <div class="description"><strong>Bill Splitter</strong></div>
-          <div class="descText" id="bs">
-            <ul>
-              <li>Built in Android Studio. </li>
-              <li>Mobile app that allows users to add groups and payment information in
-                order to split group bills such as utilities and restaurant checks.</li>
-            </ul>
-        </div>
       </div>
-
-      <div class="email">
-        <h1>Contact</h1>
-      <div id="emailText">
-        <h2>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form below.</h2>
-      </div>
-      <br>
-      <form action="http://formspree.io/tyler.walke@gmail.com" method="post">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="emailForm">
-              <label for="fullName">Name*</label>
-              <input type="fullName" class="form-control" id="fullName" name="name" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="emailForm">
-              <label for="senderEmail">Email*</label>
-              <input type="email" class="form-control" id="senderEmail" name="email" required>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="emailForm">
-              <label for="senderPhone">Phone</label>
-              <input type="tel" class="form-control" id="senderPhone" name="phone">
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="emailForm">
-              <label for="senderCompany">Company</label>
-              <input type="senderCompany" class="form-control" id="senderCompany" name="company">
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="emailForm">
-              <label for="emailTextArea">Message*</label>
-              <textarea class="form-control" id="emailTextArea" name="message" required></textarea>
-            </div>
-          </div>
-          <button type="submit" class="button" id="submitButton">Submit</button>
-        </div>
-      </form>
     </div>
-
-      <div class="hobbies">
-        <div id="subHobbies">
-          <h1>Hobbies</h1>
-          <div id="subText">
-            <h2>A lot of my spare time is spent in the Utah wilderness. Here are a few pictures from my outdoor adventures.</h2>
-          </div>
-        </div>
-        <div class="thumbnail" id="thumbnail1">
-          <img src="blank_f.jpeg" data-src="Hobbies/0.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail2">
-          <img src="blank_f.jpeg" data-src="Hobbies/1.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail3">
-          <img src="blank_f.jpeg" data-src="Hobbies/22.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail4">
-          <img src="blank_f.jpeg" data-src="Hobbies/3.jpg" >
-        </div>
-        <div class="thumbnail" id="thumbnail5">
-          <img src="blank_f.jpeg" data-src="Hobbies/4.jpg" >
-        </div>
-        <div class="thumbnail" id="thumbnail6">
-          <img src="blank_f.jpeg" data-src="Hobbies/12.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail1">
-          <img src="blank_f.jpeg" data-src="Hobbies/5.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail2">
-          <img src="blank_f.jpeg" data-src="Hobbies/8.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail3">
-          <img src="blank_f.jpeg" data-src="Hobbies/6.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail4">
-          <img src="blank_f.jpeg" data-src="Hobbies/7.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail5">
-          <img src="blank_f.jpeg" data-src="Hobbies/2.jpg" >
-        </div>
-        <div class="thumbnail" id="thumbnail6">
-          <img src="blank_f.jpeg" data-src="Hobbies/19.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail1">
-          <img src="blank_f.jpeg" data-src="Hobbies/25.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail2">
-          <img src="blank_f.jpeg" data-src="Hobbies/13.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail3">
-          <img src="blank_f.jpeg" data-src="Hobbies/15.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail4">
-          <img src="blank_f.jpeg" data-src="Hobbies/16.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail5">
-          <img src="blank_f.jpeg" data-src="Hobbies/24.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail6">
-          <img src="blank_f.jpeg" data-src="Hobbies/10.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail1">
-          <img src="blank_f.jpeg" data-src="Hobbies/18.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail2">
-          <img src="blank_f.jpeg" data-src="Hobbies/17.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail3">
-          <img src="blank_f.jpeg" data-src="Hobbies/20.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail4">
-          <img src="blank_f.jpeg" data-src="Hobbies/9.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail5">
-          <img src="blank_f.jpeg" data-src="Hobbies/21.jpg">
-        </div>
-        <div class="thumbnail" id="thumbnail6">
-          <img src="blank_f.jpeg" data-src="Hobbies/23.jpg">
-        </div>
-      </div>
-
-    <div class="resume">
-      <div class="resumeHeader">
-        <div id="resumeDownload">
+    <!-- RESUME -->
+    <div id="resumeScreen">
+      <div id="resumeTitle">
+        Resume
+        <p>Download a pdf of my resume here</p>
           <button onclick="onDownloadClick()" download="tyler_walke_resume" class="button" id="resumeDownloadButton">Download</button>
+      </div>
+      <div id="resumeContent">
+        <div class="resume">
+          <div class="leftText" id="nameHead">
+            <strong>Tyler<br>Walke</strong>
+          </div>
+          <div class="rightText" id="contactText">832.693.1724 <br>
+            tyler.walke@gmail.com <br>
+            tylerwadewalke.com <br>
+            github.com/twalke
+            <br>
+          </div>
+          <div class="leftText" id="eduHead">
+            Education
+          </div>
+          <div class="rightText" id="eduText">
+            <strong>Brigham Young University</strong> (Provo, UT) <br>
+            B.A. in International Relations, 2015 <br>
+            <strong>Utah Valley University</strong> (Orem, UT) <br>
+            2017-present; pursuing B.S. in computer science
+          </div>
+          <div class="leftText" id="projectsHead">
+            Projects
+          </div>
+          <div class="rightText" id="projectsText">
+            <strong>Personal website:</strong> tylerwadewalke.com <br><br>
+            <strong>Sparky</strong>
+            <ul>
+              <li>Second Place at BYU hackathon in March 2018 </li>
+              <li>Built in Android Studio </li>
+              <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group</li>
+            </ul>
+            <strong>Canyon Guide</strong>
+            <ul>
+              <li>Built in Android Studio </li>
+              <li>Mobile app that utilizes crowdsourcing to help climbers find routes in their
+              area. </li>
+              <li>Links pictures of routes to GPS coordinates to allow easier navigation
+              outdoors </li>
+            </ul>
+          </div>
+          <div class="leftText" id="skillsHead">
+            Skills
+          </div>
+          <div class="rightText" id="skillsText">Experience with React JS, C++, Java, Android Studio, HTML, CSS, JavaScript,
+            Print layout experience, Stata, Adobe InDesign, and Adobe Illustrator <br>
+            <strong>Language:</strong> Spanish fluency
+          </div>
+          <div class="leftText" id="workHead">
+            Work Experience
+          </div>
+          <div class="rightText" id="workText">
+            <strong>Jambic</strong> (Orem, UT) <br>
+            <em>Web Developer</em> <br>
+            Apr 2018-present
+            <ul>
+              <li>Helped build HIPAA compliant electronic medical record platform
+                for podiatrists </li>
+              <li>Used JavaScript to build patient and insurance billing system</li>
+          </ul>
+            <strong>Aspiro</strong> (Sandy, UT) <br>
+            <em>Wilderness Therapy Field Guide</em> <br>
+            May 2016-November 2016
+            <ul>
+              <li>Taught coping skills to teenagers recovering from addictions and social
+              interaction skills to teenagers with autism spectrum disorders </li>
+              <li>On duty 24 hours a day for 8 days at a time </li>
+              <li>Cultivated exellent communication skills with co-guide team to keep
+              participants safe and on-site</li>
+          </ul>
+            <strong>Elevate Global</strong> (Asunción, Paraguay) <br>
+            <em>Director of Research</em> <br>
+            Aug. 2015–May 2016 <br>
+            <ul>
+              <li>Set up databases and gathered research on efficacy of Elevate’s training
+              programs by surveying hundreds of businesses across Paraguay </li>
+              <li>Cultivated relationships with partners at banking institutions</li>
+              <li>Demonstrated to potential partners the real impact of Elevate’s business model </li>
+              <li>Negotiated book printing contracts worth tens of thousands of dollars </li>
+            </ul>
+            <em>Intern</em> <br>
+            Aug. 2014–Dec. 2014 <br>
+            <ul>
+              <li>Helped launch first four schools of Elevate and participated in early start-up
+              phase of company </li>
+              <li>Created substantial portions of text and the majority of the layout deisgn of
+              business textbooks</li>
+            </ul>
+          </div>
         </div>
-        <div id="resumeDownloadText">
-          <strong>Download a pdf of my resume.</strong>
-        </div>
-      </div>
-      <div class="leftText" id="nameHead">
-        <strong>Tyler<br>Walke</strong>
-      </div>
-      <div class="rightText" id="contactText">832.693.1724 <br>
-        tyler.walke@gmail.com <br>
-        tylerwadewalke.com <br>
-        github.com/twalke
-        <br>
-      </div>
-      <div class="leftText" id="eduHead">
-        Education
-      </div>
-      <div class="rightText" id="eduText">
-        <strong>Brigham Young University</strong> (Provo, UT) <br>
-        B.A. in International Relations, 2015 <br>
-        <strong>Utah Valley University</strong> (Orem, UT) <br>
-        2017-present; pursuing B.S. in computer science
-      </div>
-      <div class="leftText" id="projectsHead">
-        Projects
-      </div>
-      <div class="rightText" id="projectsText">
-        <strong>Personal website:</strong> tylerwadewalke.com <br><br>
-        <strong>Sparky</strong>
-        <ul>
-          <li>Second Place at BYU hackathon in March 2018 </li>
-          <li>Built in Android Studio </li>
-          <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group</li>
-        </ul>
-        <strong>Canyon Guide</strong>
-        <ul>
-          <li>Built in Android Studio </li>
-          <li>Mobile app that utilizes crowdsourcing to help climbers find routes in their
-          area. </li>
-          <li>Links pictures of routes to GPS coordinates to allow easier navigation
-          outdoors </li>
-        </ul>
-      </div>
-      <div class="leftText" id="skillsHead">
-        Skills
-      </div>
-      <div class="rightText" id="skillsText">Experience with React JS, C++, Java, Android Studio, HTML, CSS, JavaScript,
-        Print layout experience, Stata, Adobe InDesign, and Adobe Illustrator <br>
-        <strong>Language:</strong> Spanish fluency
-      </div>
-      <div class="leftText" id="workHead">
-        Work Experience
-      </div>
-      <div class="rightText" id="workText">
-        <strong>Jambic</strong> (Orem, UT) <br>
-        <em>Web Developer</em> <br>
-        Apr 2018-present
-        <ul>
-          <li>Helped build HIPAA compliant electronic medical record platform
-            for podiatrists </li>
-          <li>Used JavaScript to build patient and insurance billing system</li>
-      </ul>
-        <strong>Aspiro</strong> (Sandy, UT) <br>
-        <em>Wilderness Therapy Field Guide</em> <br>
-        May 2016-November 2016
-        <ul>
-          <li>Taught coping skills to teenagers recovering from addictions and social
-          interaction skills to teenagers with autism spectrum disorders </li>
-          <li>On duty 24 hours a day for 8 days at a time </li>
-          <li>Cultivated exellent communication skills with co-guide team to keep
-          participants safe and on-site</li>
-      </ul>
-        <strong>Elevate Global</strong> (Asunción, Paraguay) <br>
-        <em>Director of Research</em> <br>
-        Aug. 2015–May 2016 <br>
-        <ul>
-          <li>Set up databases and gathered research on efficacy of Elevate’s training
-          programs by surveying hundreds of businesses across Paraguay </li>
-          <li>Cultivated relationships with partners at banking institutions</li>
-          <li>Demonstrated to potential partners the real impact of Elevate’s business model </li>
-          <li>Negotiated book printing contracts worth tens of thousands of dollars </li>
-        </ul>
-        <em>Intern</em> <br>
-        Aug. 2014–Dec. 2014 <br>
-        <ul>
-          <li>Helped launch first four schools of Elevate and participated in early start-up
-          phase of company </li>
-          <li>Created substantial portions of text and the majority of the layout deisgn of
-          business textbooks</li>
-        </ul>
       </div>
     </div>
+    <!-- CONTACT -->
+    <div id="contactScreen">
+      <div id="contactTitle">
+        Contact
+        <p>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using this form.</p>
+      </div>
+      <div id="contactContent">
+        <form action="http://formspree.io/tyler.walke@gmail.com" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="emailForm">
+                <label for="fullName">Name*</label>
+                <input type="fullName" class="form-control" id="fullName" name="name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="emailForm">
+                <label for="senderEmail">Email*</label>
+                <input type="email" class="form-control" id="senderEmail" name="email" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="emailForm">
+                <label for="senderPhone">Phone</label>
+                <input type="tel" class="form-control" id="senderPhone" name="phone">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="emailForm">
+                <label for="senderCompany">Company</label>
+                <input type="senderCompany" class="form-control" id="senderCompany" name="company">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="emailForm">
+                <label for="emailTextArea">Message*</label>
+                <textarea class="form-control" id="emailTextArea" name="message" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="button" id="submitButton">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <script src="app.js"></script>
-    <script>
-      function init() {
-      var imgDefer = document.getElementsByTagName('img');
-      for (var i=0; i<imgDefer.length; i++) {
-      if(imgDefer[i].getAttribute('data-src')) {
-      imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-      } } }
-      window.onload = init;
-    </script>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
