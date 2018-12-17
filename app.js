@@ -13,7 +13,7 @@ $("#resumeTag").click(function() {
         scrollTop: $("#resumeScreen").offset().top},
         'slow');
 });
-$("#contactTag").click(function() {
+$(".contactTag").click(function() {
     $('html,body').animate({
         scrollTop: $("#contactScreen").offset().top},
         'slow');
