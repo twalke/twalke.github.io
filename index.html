@@ -64,7 +64,6 @@
     <div id="aboutScreen">
       <div id="aboutTitle">About</div>
       <div id="profileImage"><img src="profilePic.JPG" alt="picture of Tyler Walke"></div>
-      <!-- <div class="contentWhiteSpace"></div> -->
       <div id="aboutContent">
         <p>I'm a MERN full stack web developer. When I'm not coding you can usually find me exploring the Utah backcountry with my dog Finn.</p>
         <p>Feel free to <a class="navButton contactTag" href="#contactScreen">contact me</a> about full-time employment opportunities or to collaborate on your next freelance project.</p>
@@ -74,24 +73,31 @@
     <div id="projectsScreen">
       <div id="projectsTitle">
         <h2>Projects</h2>
-        <p>Here are a few of the projects I've been working on in my spare time. You can view my GitHub <a target="_blank" href="https://github.com/twalke"><strong>here</strong></a>.</p>
+        <p>Here are a few of the projects I've been working on in my spare time. You can view my GitHub <a id="mainGitHubLink" target="_blank" href="https://github.com/twalke"><strong>here</strong></a>.</p>
       </div>
       <div id="projectsContent">
         <div class="description"><strong>BraverMountain Mushing</strong></div>
-          <div class="descText">
-            <ul>
-              <li>Freelance website built to promote the dog mushing and writing projects of Blair Braverman and Quince Mountain.</li>
-              <li>Built in HTML/CSS and JavaScript.</li>
-              <li>Uses twitter API to build custom modals to display long threads of tweets directly on the website without requiring the user to visit twitter or have an account.</li>
-            </ul>
+        <div class="descText">
+          <ul>
+            <li>Freelance website built to promote the dog mushing and writing projects of Blair Braverman and Quince Mountain.</li>
+            <li>Built in HTML/CSS and JavaScript. You can see the GitHub repo <a target="_blank" href="https://github.com/awalke/BravermountainMushing"><strong>here</strong></a>.</li>
+            <li>Uses twitter API to build custom modals to display long threads of tweets directly on the website without requiring the user to visit twitter or have an account.</li>
+          </ul>
+        </div>
+        <div class="description"><strong>CSS Dog (top of site)</strong></div>
+        <div class="descText">
+          <ul>
+            <li>Built and animated entirely using HTML/CSS</li>
+            <li>You can see the repo on <a target="_blank" href="https://codepen.io/twalke/pen/Qzbapo"><strong>codepen.io</strong></a>.</li>
+          </ul>
         </div>
         <div class="description"><strong>Sparky</strong></div>
-          <div class="descText">
-            <ul>
-              <li>Second Place at BYU hackathon in March 2018. </li>
-              <li>Built in Android Studio.</li>
-              <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group.</li>
-            </ul>
+        <div class="descText">
+          <ul>
+            <li>Second Place at BYU hackathon in March 2018. </li>
+            <li>Built in Android Studio. You can see the GitHub repo <a target="_blank" href="https://github.com/twalke/Sparky-master"><strong>here</strong></a>.</li>
+            <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group.</li>
+          </ul>
         </div>
         <div class="description"><strong>Canyon Guide</strong></div>
         <div class="descText">
@@ -109,7 +115,7 @@
     <div id="resumeScreen">
       <div id="resumeTitle">
         Resume
-        <p>Download a pdf of my resume here</p>
+        <p>Download a pdf of my resume</p>
           <button onclick="onDownloadClick()" download="tyler_walke_resume" class="button" id="resumeDownloadButton">Download</button>
       </div>
       <div id="resumeContent">
@@ -155,8 +161,7 @@
           <div class="leftText" id="skillsHead">
             Skills
           </div>
-          <div class="rightText" id="skillsText">Experience with React JS, C++, Java, Android Studio, HTML, CSS, JavaScript,
-            Print layout experience, Stata, Adobe InDesign, and Adobe Illustrator <br>
+          <div class="rightText" id="skillsText">HTML/CSS, JavaScript, React, C++, Java, Android Studio, Stata, Adobe InDesign, and Adobe Illustrator <br>
             <strong>Language:</strong> Spanish fluency
           </div>
           <div class="leftText" id="workHead">
@@ -165,7 +170,7 @@
           <div class="rightText" id="workText">
             <strong>Jambic</strong> (Orem, UT) <br>
             <em>Web Developer</em> <br>
-            Apr 2018-present
+            Apr 2018-Nov 2018
             <ul>
               <li>Helped build HIPAA compliant electronic medical record platform
                 for podiatrists </li>
