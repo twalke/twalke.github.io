@@ -757,10 +757,13 @@ textarea {
 @media screen and (max-width:618px){
   nav {
     top: 0;
+    font-size: 10px;
   }
   #title {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 40px;
+    padding-bottom: 140px;
+    line-height: 140px;
   }
   #finn {
     margin-top: -350px;
@@ -769,7 +772,7 @@ textarea {
     font-size: 20px;
   }
   .navButton {
-    font-size: 30px;
+    font-size: 25px;
   }
   #aboutScreen {
     height: 200vh;
@@ -778,6 +781,8 @@ textarea {
     grid-column: 1/13;
     grid-row: 1/4;
     height: 100vh;
+    padding-top: 7vh;
+    margin-top: 0;
   }
   #aboutContent {
     grid-column: 1/13;
@@ -811,6 +816,7 @@ textarea {
     padding-top: 0;
   }
   #projectsTitle h2 {
+    padding-top: 7vh;
     padding-bottom: 10vh;
   }
   #resumeScreen {
@@ -819,7 +825,8 @@ textarea {
   #resumeTitle {
     grid-column: 1/13;
     grid-row: 1/2;
-    padding: 0;
+    /* padding: 0; */
+    padding-top: 7vh;
     margin: 0;
     height: 100vh;
   }
@@ -846,9 +853,10 @@ textarea {
     grid-row: 1/2;
     padding: 5px;
     height: 100vh;
+    padding-top: 7vh;
   }
   #contactTitle p {
-    padding-top: 10vh;
+    padding-top: 7vh;
   }
   #contactContent {
     grid-column: 1/13;
