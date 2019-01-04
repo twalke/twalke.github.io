@@ -132,8 +132,9 @@ nav a {
   grid-column: 1/7;
   grid-row: 1/4;
   background-color: white;
-  padding: 100px 50px 50px 50px;
-  font-size: 20px;
+  padding: 50px 30px 30px 30px;
+  /* font-size: 17px; */
+  font-size: 1.4vw;
 }
 #projectsScreen h2 {
   font-size: 75px;
@@ -722,7 +723,9 @@ textarea {
 }
 @media screen and (max-width:900px){
   #projectsContent {
-    font-size: 18px;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width:850px){
@@ -735,6 +738,9 @@ textarea {
   }
   #projectsContent {
     font-size: 15px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #nameHead {
   font-size: 25px !important;
