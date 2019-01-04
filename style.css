@@ -8,6 +8,18 @@
 p {
   font-size: 30px;
 }
+::selection {
+  background-color: black;
+  color: white;
+}
+#resumeTitle::selection {
+  background-color: white;
+  color: black;
+}
+#resumeTitle p::selection {
+  background-color: white;
+  color: black;
+}
 #frontScreen {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
