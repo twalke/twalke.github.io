@@ -1,24 +1,29 @@
-$("#aboutTag").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#aboutScreen").offset().top},
-        'slow');
-});
-$("#projectsTag").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#projectsScreen").offset().top},
-        'slow');
-});
-$("#resumeTag").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#resumeScreen").offset().top},
-        'slow');
-});
-$(".contactTag").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#contactScreen").offset().top},
-        'slow');
-});
+$(document).ready(function() {
+  var state = 0;
 
-function onDownloadClick() {
-  window.open("Resume_Tyler_Walke.pdf");
-}
+  $(".container-front").click(function () {
+
+    if (state == 1) {
+      state = 0;
+      $('.front-center').show();
+      $('.square').show();
+      $('.content').css('-webkit-transition', '1s');
+      $('.content').css('-webkit-transform', 'rotateY( 0deg )');
+    }
+    else {
+      state = 1;
+      $('.front-center').hide();
+      $('.square').hide();
+      $('.content').css('-webkit-transition', '1s');
+      $('.content').css('-webkit-transform', 'rotateY( -180deg )');
+    }
+  });
+
+  $(".back").click(function () {
+    state = 0;
+    $('.front-center').show();
+    $('.square').show();
+    $('.content').css('-webkit-transition', '1s');
+    $('.content').css('-webkit-transform', 'rotateY( 0deg )');
+  });
+});

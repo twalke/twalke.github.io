@@ -1,920 +1,272 @@
-#container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300');
+/* @import "compass/css3"; */
+
+body {
+  background: #d9d9d9;
+  font-family: 'Alegreya Sans', sans-serif;
 }
-p {
-  font-size: 30px;
+
+* {
+  margin: 0;
 }
-::selection {
-  background-color: black;
-  color: white;
-}
-#resumeTitle::selection {
-  background-color: white;
-  color: black;
-}
-#resumeTitle p::selection {
-  background-color: white;
-  color: black;
-}
-#frontScreen {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  grid-column: 1/13;
-  grid-row: 1/2;
+
+.container {
   height: 100vh;
-  width: 100vw;
-  background-color: black;
-  animation: pageLoad 5s forwards;
-}
-#title {
-  grid-column: 1/13;
-  font-size: 150px;
-  text-align: center;
-  padding-top: 15vh;
-  animation: titleLoad 5s forwards;
-  z-index: 1;
-}
-nav {
-  position: absolute;
-  grid-column: 1/13;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100px;
-  font-size: 40px;
-  z-index: 10;
-}
-nav a {
-  animation: navLoad 5s forwards;
-}
-#aboutTag {
-  grid-column: 3/4;
-  text-align: center;
-}
-#projectsTag {
-  grid-column: 5/6;
-  text-align: center;
-}
-#resumeTag {
-  grid-column: 7/8;
-  text-align: center;
-}
-#contactTag {
-    grid-column: 9/10;
-  text-align: center;
-}
-/* ABOUT CSS ********************************************************************/
-#aboutScreen {
-  grid-column: 1/13;
-  grid-row: 2/3;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  background-color: brown;
-  font-size: 75px;
-  height: 100vh;
-}
-#aboutTitle {
-  grid-column: 2/6;
-  grid-row: 1/2;
-  color: white;
-  text-align: center;
-  margin-top: 5vh;
-}
-#profileImage {
-  grid-column: 2/6;
-  grid-row: 2/3;
-  transform: translateX(12.5%);
-}
-#profileImage img {
-  border-radius: 50%;
-  height: 25vw;
-}
-#aboutContent {
-  grid-column: 7/13;
-  grid-row: 1/4;
-  background-color: white;
-  padding: 100px 50px 50px 50px;
-}
-/* PROJECTS CSS ********************************************************************/
-#projectsScreen {
-  grid-column: 1/13;
-  grid-row: 3/4;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  height: 100vh;
-  font-size: 75px;
-}
-#projectsTitle {
-  grid-column: 7/13;
-  grid-row: 1/2;
-  height: 100vh;
-  background-color: #0093FF;
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
-#projectsContent {
-  grid-column: 1/7;
-  grid-row: 1/4;
-  background-color: white;
-  padding: 50px 30px 30px 30px;
-  /* font-size: 17px; */
-  font-size: 1.4vw;
-}
-#projectsScreen h2 {
-  font-size: 75px;
-  padding-top: 7vh;
-  padding-bottom: 5vh;
-}
-#mainGitHubLink {
-  color: black;
-}
-/* RESUME CSS ************************************************************************/
-#resumeScreen {
-  grid-column: 1/13;
-  grid-row: 4/5;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  margin: 0 auto;
-  height: 100vh;
-  font-size: 75px;
-}
-#resumeTitle {
   position: relative;
-  grid-column: 1/7;
-  grid-row: 1/2;
-  background-color: black;
-  color: white;
-  padding: 50px;
-  padding-top: 7vh;
+}
+
+.card {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40vw;
+  width: 70vw;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  perspective: 2000px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.4);
+
+  -webkit-transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  -webkit-transform: rotateY( -10deg ) ;
+  -webkit-transition: transform 0.5s;
+  transform: rotateY( -10deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
   text-align: center;
-  padding-top: 10vh;
+  font-size: 60px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-#resumeContent{
-  grid-column: 7/13;
-  overflow: auto;
+
+.front {
+  color: #28AFB0;
+  font-size: 150px;
+  letter-spacing: -45px;
 }
-#resumeTitle p {
-  padding-top: 5vh;
+
+.container-front {
+  height: 100%;
+  position: relative;
+  background-color: #353535;
 }
-.button {
-  background-color: black;
+
+.border {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: solid white 2px;
+}
+
+.front-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  -webkit-animation: fadein 2s forwards;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.back {
+  background-color: #353535;
   color: white;
-  border: 2px solid white;
-  outline: none !important;
-  border-radius: 0px;
-  font-size: 25px;
-  width:15vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  text-align: center;
-  border: 2px solid white;
-  margin: 20px;
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
 }
-.button:hover {
-  background-color: #0093FF;
+
+.grid {
+  z-index: 1000;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+}
+
+.left {
+  grid-column: 1/1;
+  text-align: left;
+  font-size: 70px;
+  line-height: 30px;
+  justify-self: right;
+  text-align: right;
+}
+
+#first {
+  font-weight: 100;
+}
+
+#last {
+  font-weight: bold;
+  color: #28AFB0;
+}
+
+#title {
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.center-line {
+  grid-column: 2/2;
+  justify-self: center;
+}
+
+.line {
+  border: 1px solid white;
+  height: 300px;
+  width: 0px;
+}
+
+.right {
+  grid-column: 3/3;
+  justify-self: left;
+  font-size: 20px;
+  text-align: left;
+  line-height: 50px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+a {
   color: white;
   text-decoration: none;
 }
-.resume {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: minmax(.5vh, auto);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-#nameHead {
-  font-size: 5vh;
-  vertical-align: middle;
-  grid-row: 1/2;
-}
-#contactText {
-  grid-row: 1/2;
-  padding-top:20px;
-  border-left: 3px solid black;
-  margin-left: -2px;
-}
-.leftText {
-  grid-column: 1/3;
-  background-color: white;
-  text-align: center;
-  vertical-align:top;
-  font-size: 26px;
-  font-weight: bold;
-  border-right: 1px solid black;
-  padding-top: 20px;
-  padding-left: 5px;
-}
-.rightText {
-  grid-column: 3/8;
-  background-color: white;
-  font-size: 18px;
-  padding-top:30px;
-  padding-left: 5px;
-  padding-right: 15px;
-}
-#eduHead {
-  grid-row: 2/3;
-}
-#eduText {
-  padding-top:20px;
-  grid-row: 2/3;
-}
-#projectsHead {
-  grid-row: 3/4;
-}
-#projectsText {
-  grid-row: 3/4;
-  padding-top:20px;
-}
-#skillsHead {
-  grid-row: 4/5;
-}
-#skillsText {
-  padding-top:20px;
-  grid-row: 4/5;
-}
-#workText {
-  padding-top:20px;
-  grid-row: 5/6;
-}
-#workHead {
-  grid-row: 5/6;
-}
-/* CONTACT CSS ***************************************************************************/
-#contactScreen {
-  grid-column: 1/13;
-  grid-row: 5/6;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(5vh, auto);
-  background-color: #D48E55;
-  margin: 0 auto;
-  height: 100vh;
-  font-size: 75px;
-}
-#contactTitle {
-  grid-column: 7/13;
-  grid-row: 1/4;
+
+a:visited {
   color: white;
-  padding: 50px;
-  text-align: center;
-  padding-top: 7vh;
-}
-#contactTitle p {
-  padding-top: 5vh;
-}
-#contactContent {
-  grid-column: 1/7;
-  grid-row: 1/4;
-  background-color: white;
-  padding: 20vh 50px 50px 50px;
-  font-size: 20px;
-}
-#submitButton {
-  background-color: #D48E55;
-}
-#submitButton:hover {
-  background-color: #0093FF;
-}
-textarea {
-  height: 20vh;
+  text-decoration: none;
 }
 
-@keyframes pageLoad {
-  40% {background-color: black;}
-  100% {background-color: transparent;}
+/* BORDER ANIMATION */
+
+.square {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-@keyframes titleLoad {
-  0% {color: white;}
-  40% {color: white;}
-  100% {color: #0093FF;}
-}
-@keyframes navLoad {
-  0% {color: black;}
-  40% {color: black;}
-  100% {color: #0093FF;}
+
+.l1,.l2,.l3,.l4 {
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+
+  -webkit-animation-duration: .4s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
 }
 
 
-/******* FINN STYLE *******************************************************************************************/
-#finn {
-  margin-top: -520px;
-}
-#finnShadow {
-  position: absolute;
-  width: 300px;
-  height: 30px;
-  background-color: #cccccc;
-  margin-left: 35px;
-  margin-top: 615px;
-  z-index: -1;
-  border-radius: 50%;
-}
-#head {
-  position: absolute;
-  background-color: brown;
-  width: 175px;
-  height: 275px;
-  margin-left: 110px;
-  margin-top: 200px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#bentleyMark {
-  position: absolute;
-  background-color: white;
-  width: 15px;
-  height: 35px;
-  margin-left: 190px;
-  margin-top: 210px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#leftEar {
-  position: absolute;
-  background-image: linear-gradient(to bottom, #A52A2A 76%, #D48E55 20%);
-  width: 75px;
-  height: 465px;
-  margin-left: 105px;
-  margin-top: 165px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#leftInnerEar {
-  position: absolute;
-  background-color: #D48E55;
-  width: 55px;
-  height: 455px;
-  margin-left: 115px;
-  margin-top: 175px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#rightEar {
-  position: absolute;
-  background-image: linear-gradient(to bottom, #A52A2A 76%, #D48E55 20%);
-  width: 75px;
-  height: 465px;
-  margin-left: 215px;
-  margin-top: 165px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#rightInnerEar {
-  position: absolute;
-  background-color: #D48E55;
-  width: 55px;
-  height: 455px;
-  margin-left: 225px;
-  margin-top: 175px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#leftFrontLeg {
-  position: absolute;
-  background-color: brown;
-  width: 55px;
-  height: 165px;
-  margin-left: 105px;
-  margin-top: 425px;
-  border-radius: 0 0 50% 50%;
-  z-index: -1;
-}
-#rightFrontLeg {
-  position: absolute;
-  background-color: brown;
-  width: 55px;
-  height: 165px;
-  margin-left: 235px;
-  margin-top: 425px;
-  border-radius: 0 0 50% 50%;
-  z-index: -1;
-}
-#leftEye {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 1px solid black;
-  margin-left: 164px;
-  margin-top: 225px;
-  border-radius: 50%;
-  animation: eyes 3s infinite, eyeColor 5s forwards;
-  z-index: 0;
-}
-#rightEye {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 1px solid black;
-  margin-left: 214px;
-  margin-top: 225px;
-  border-radius: 50%;
-  animation: eyes 3s infinite, eyeColor 5s forwards;
-  z-index: 0;
-}
-.eyes{
-  background-color: white !important;
-}
-#snoutShadow {
-  position: absolute;
-  background-color: #D48E55;
-  width: 55px;
-  height: 65px;
-  margin-left: 170px;
-  margin-top: 245px;
-  border-radius: 40%;
-  z-index: -1;
-}
-#snout {
-  position: absolute;
-  background-color: brown;
-  width: 55px;
-  height: 65px;
-  margin-left: 170px;
-  margin-top: 265px;
-  border-radius: 40%;
-  z-index: -1;
-}
-#nose {
-  position: absolute;
-  background-color: black;
-  width: 25px;
-  height: 15px;
-  margin-left: 185px;
-  margin-top: 245px;
-  border-radius: 20% 20% 50% 50%;
-  z-index: -1;
-}
-#mouth {
-  position: absolute;
-  background-color: black;
-  width: 45px;
-  height: 35px;
-  margin-left: 175px;
-  margin-top: 265px;
-  border-radius: 50%;
-  z-index: -1;
-}
-#tongue{
-  position: absolute;
-  background-color: pink;
-  width: 25px;
-  height: 35px;
-  margin-left: 185px;
-  margin-top: 290px;
-  border-radius: 20% 20% 50% 50%;
-  animation: tongue .3s infinite;
-  z-index: -1;
-}
-#mouthTop {
-  position: absolute;
-  background-color: #D48E55;
-  width: 45px;
-  height: 20px;
-  margin-left: 175px;
-  margin-top: 260px;
-  z-index: -1;
-}
-#collar {
-  position: absolute;
-  background-color: red;
-  width: 185px;
-  height: 20px;
-  margin-left: 105px;
-  margin-top: 330px;
-  border-radius: 25%;
-  z-index: -1;
-}
-#dogTag {
-  position: absolute;
-  background-color: yellow;
-  width: 30px;
-  height: 30px;
-  margin-left: 182px;
-  margin-top: 340px;
-  border-radius: 50%;
-  z-index: -1;
-}
-#body {
-  position: absolute;
-  background-color: brown;
-  width: 175px;
-  height: 300px;
-  margin-left: 110px;
-  margin-top: 330px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#chest {
-  position: absolute;
-  background-color: white;
-  width: 85px;
-  height: 250px;
-  margin-left: 155px;
-  margin-top: 380px;
-  border-radius: 50% 50% 20% 20%;
-  z-index: -1;
-}
-#chestOutline {
-  position: absolute;
-  background-color: brown;
-  width: 85px;
-  height: 250px;
-  margin-left: 155px;
-  margin-top: 380px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#frontFeet {
-  position: absolute;
-  background-color: #D48E55;
-  width: 235px;
-  height: 30px;
-  margin-left: 80px;
-  margin-top: 600px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#backLegsShadow {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 215px;
-  height: 90px;
-  margin-left: 90px;
-  margin-top: 540px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#backFeetShadow {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 275px;
-  height: 30px;
-  margin-left: 60px;
-  margin-top: 600px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#backLegs {
-  position: absolute;
-  background-color: brown;
-  width: 215px;
-  height: 90px;
-  margin-left: 90px;
-  margin-top: 540px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#backFeet {
-  position: absolute;
-  background-color: brown;
-  width: 275px;
-  height: 30px;
-  margin-left: 60px;
-  margin-top: 600px;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
-#tailLeft {
-  position: absolute;
-  background-image: linear-gradient(to top, white 0%, white 5%, #A52A2A 5%, #A52A2A 80%, white 20%);
-  width: 200px;
-  height: 250px;
-  margin-left: 10px;
-  margin-top: 380px;
-  border-radius: 50%;
-  animation: wagLeft 1s infinite;
-}
-#tailWhiteLeft {
-  position: absolute;
-  background-color: white;
-  width: 200px;
-  height: 250px;
-  margin-left: 45px;
-  margin-top: 340px;
-  border-radius: 50%;
-  animation: wagLeft 1s infinite;
-}
-#tailShadowLeft {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 248px;
-  margin-left: 10px;
-  margin-top: 380px;
-  border-radius: 50%;
-  animation: wagLeft 1s infinite;
-}
-#tailRight {
-  position: absolute;
-  background-image: linear-gradient(to top, white 0%, white 5%, #A52A2A 5%, #A52A2A 80%, white 20%);
-  width: 200px;
-  height: 250px;
-  margin-left: 190px;
-  margin-top: 380px;
-  border-radius: 50%;
-  animation: wagRight 1s infinite;
-  animation-delay: .5s;
-  z-index: -1;
-}
-#tailWhiteRight {
-  position: absolute;
-  background-color: white;
-  width: 200px;
-  height: 250px;
-  margin-left: 155px;
-  margin-top: 340px;
-  border-radius: 50%;
-  animation: wagRight 1s infinite;
-  animation-delay: .5s;
-  z-index: -1;
-}
-#tailShadowRight {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 248px;
-  margin-left: 190px;
-  margin-top: 380px;
-  border-radius: 50%;
-  animation: wagRight 1s infinite;
-  animation-delay: .5s;
-  z-index: -1;
-}
-#neckLeft {
-  position: absolute;
-  background-color: white;
-  width: 50px;
-  height: 70px;
-  border-radius: 40%;
-  margin-top: 305px;
-  margin-left: 65px;
-  z-index: -1;
-}
-#neckRight {
-  position: absolute;
-  background-color: white;
-  width: 50px;
-  height: 70px;
-  border-radius: 40%;
-  margin-top: 305px;
-  margin-left: 280px;
-  z-index: -1;
-}
-@keyframes wagLeft {
-  0%   {left: 100px; z-index: -1;}
-  5%   {left: 100px; z-index: -1;}
-  20%  {left: 0px; z-index: -1;}
-  30%  {left: 0px; z-index: -1;}
-  55%   {left: 100px; z-index: -2;}
-  100%  {left: 100px; z-index: -2;}
-}
-@keyframes wagRight {
-0%   {left: -100px; z-index: -1;}
-5%   {left: -100px; z-index: -1;}
-20%  {left: 0px; z-index: -2;}
-30%  {left: 0px; z-index: -2;}
-55%   {left: -100px; z-index: -2;}
-100% {left: -100px; z-index: -2;}
-}
-@keyframes eyes {
-  16% {height: 15px;}
-  18% {height: 0px;}
-  20% {height: 15px;}
-}
-@keyframes eyeColor {
-  0% {background-color: white; border: 1px solid white;}
-  40% {background-color: white; border: 1px solid white;}
-  70% {background-color: black; border: 1px solid black;}
-  100% {background-color: black; border: 1px solid black;}
-}
-@keyframes tongue {
-  50% {height: 38px;}
+.l1 {
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 1px;
+  -webkit-animation-name: l1;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration:2s;
 }
 
+.l2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-animation-name: l2;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration:2s;
+}
 
-/* Media Qs */
-@media screen and (max-width:1200px){
-  #title {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  #finn {
-    margin-top: -420px;
-  }
+.l3 {
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  -webkit-animation-name: l3;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration:2s;
 }
-@media screen and (max-width:900px){
-  #projectsContent {
-    font-size: 17px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media screen and (max-width:850px){
-  #title {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  #finn {
-    margin-top: -420px;
-  }
-  #projectsContent {
-    font-size: 15px;
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #nameHead {
-  font-size: 25px !important;
-  }
-  .rightText {
-  font-size: 15px !important;
-  }
-  .leftText {
-  font-size: 20px !important;
-  text-align: left;
-  }
-  .button {
-    font-size: 16px !important;
-  }
-  .menuLinks {
-    font-size: 65px;
-  }
-  .email {
-    grid-column: 2/13;
-  }
-  .hobbies {
-    grid-column: 2/13;
-  }
 
-  .resume {
-    grid-column: 1/14;
-    margin-top: 10vh;
-  }
+.l4 {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-animation-name: l4;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration:2s;
 }
-@media screen and (max-width:650px){
-  #finn {
-    margin-top: -420px;
-  }
+@-webkit-keyframes l1 {
+  0%    { height: 0; background: #FFF; }
+  100%  { height: 100%; background: #FFF; }
 }
-@media screen and (max-width:618px){
-  nav {
-    top: 0;
-    font-size: 10px;
-  }
-  #title {
-    margin-top: 0;
-    padding-top: 40px;
-    padding-bottom: 140px;
-    line-height: 140px;
-  }
-  #finn {
-    margin-top: -350px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .navButton {
-    font-size: 25px;
-  }
-  #aboutScreen {
-    height: 200vh;
-  }
-  #aboutTitle {
-    grid-column: 1/13;
-    grid-row: 1/4;
-    height: 100vh;
-    padding-top: 7vh;
-    margin-top: 0;
-  }
-  #aboutContent {
-    grid-column: 1/13;
-    grid-row: 4/8;
-    height: 100vh;
-  }
-  #aboutScreen a {
-    font-size: 20px;
-  }
-  #profileImage {
-    grid-column: 2/11;
-    grid-row: 2/3;
-    transform: translateX(5%);
-    z-index: 10;
-  }
-  #profileImage img {
-    height: 75vw;
-  }
-  #projectsScreen {
-    height: 200vh;
-  }
-  #projectsTitle {
-    grid-column: 1/13;
-    grid-row: 1/2;
-    padding: 10px;
-  }
-  #projectsContent {
-    grid-column: 1/13;
-    grid-row: 2/3;
-    font-size: 15px;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #projectsTitle h2 {
-    padding-top: 7vh;
-    padding-bottom: 10vh;
-  }
-  #resumeScreen {
-    height: 200vh;
-  }
-  #resumeTitle {
-    grid-column: 1/13;
-    grid-row: 1/2;
-    padding-top: 7vh;
-    margin: 0;
-    height: 100vh;
-  }
-  #resumeTitle p {
-    padding: 0;
-    padding-top: 10vh;
-  }
-  #resumeContent {
-    grid-column: 1/13;
-    grid-row: 2/3;
-  }
-  .resume {
-    grid-column: 1/14;
-    margin-top: 0;
-    padding-top: 0;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  #contactScreen {
-    height: 200vh;
-  }
-  #contactTitle {
-    grid-column: 1/13;
-    grid-row: 1/2;
-    padding: 5px;
-    height: 100vh;
-    padding-top: 7vh;
-  }
-  #contactTitle p {
-    padding-top: 7vh;
-  }
-  #contactContent {
-    grid-column: 1/13;
-    grid-row: 2/3;
-    padding-top: 10px;
-    height: 100vh;
-  }
-  #submitButton {
-    width: 200px;
-  }
 
-  h1 {
-    font-size: 50px;
-    padding-left:3vw;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  #resumeDownloadText {
-    font-size: 20px !important;
-  }
-  #resumeDownloadButton {
-    font-size: 20px !important;
-    width: 120px;
-  }
-  .rightText {
-  font-size: 15px !important;
-  }
-  .leftText {
-  font-size: 15px !important;
-  }
-  #subText {
-    margin-top: 5vh;
-  }
-  textarea {
-    height: 10vh;
-  }
+@-webkit-keyframes l2 {
+  0%    { width: 0; background: #FFF; }
+  100%  { width: 100%; background: #FFF; }
+}
+
+@-webkit-keyframes l3 {
+  0%    { height: 0; background: #FFF; }
+  100%  { height: 100%; background: #FFF; }
+}
+
+@-webkit-keyframes l4 {
+  0%    { width: 0; background: #FFF; }
+  100%  { width: 100%; background: #FFF; }
+}
+
+@-webkit-keyframes l4 {
+  0%    { width: 0; background: #FFF; }
+  100%  { width: 100%; background: #FFF; }
 }

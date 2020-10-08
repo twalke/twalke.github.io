@@ -1,259 +1,72 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Tyler Walke</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97193893-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-97193893-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Tyler Walke</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <div class="container-front">
+              <div class="front-center">
+                TW
+              </div>
+              <div class="square">
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <span class="l3"></span>
+                <span class="l4"></span>
+              </div>
 
-<body>
-  <div id="container">
-<!-- HOME SCREEN -->
-    <div id="frontScreen">
-      <div id="title">tyler walke</div>
-<!-- NAV BAR -->
-      <nav>
-        <a class="navButton" id="aboutTag" href="#aboutScreen">about</a>
-        <a class="navButton" id="projectsTag" href="#projectsScreen">projects</a>
-        <a class="navButton" id="resumeTag" href="#resumeScreen">resume</a>
-        <a class="navButton contactTag" id="contactTag" href="#contactScreen">contact</a>
-      </nav>
-<!-- FINN CSS ANIMATION -->
-      <div id="finn">
-        <div id="finnShadow"></div>
-        <div id="tailLeft"></div>
-        <div id="tailShadowLeft"></div>
-        <div id="tailWhiteLeft"></div>
-        <div id="tailRight"></div>
-        <div id="tailShadowRight"></div>
-        <div id="tailWhiteRight"></div>
-        <div id="backFeet"></div>
-        <div id="backLegs"></div>
-        <div id="backFeetShadow"></div>
-        <div id="backLegsShadow"></div>
-        <div id="body"></div>
-        <div id="leftEar"></div>
-        <div id="leftInnerEar"></div>
-        <div id="rightEar"></div>
-        <div id="rightInnerEar"></div>
-        <div id="head"></div>
-        <div id="leftFrontLeg"></div>
-        <div id="rightFrontLeg"></div>
-        <div id="frontFeet"></div>
-        <div id="chestOutline"></div>
-        <div id="chest"></div>
-        <div id="snoutShadow"></div>
-        <div id="nose"></div>
-        <div id="mouth"></div>
-        <div id="tongue"></div>
-        <div id="mouthTop"></div>
-        <div id="bentleyMark"></div>
-        <div id="collar"></div>
-        <div id="dogTag"></div>
-        <div id="neckLeft"></div>
-        <div id="neckRight"></div>
-        <div class="eyes" id="leftEye"></div>
-        <div class="eyes" id="rightEye"></div>
-      </div>
-    </div>
-<!-- ABOUT ME -->
-    <div id="aboutScreen">
-      <div id="aboutTitle">About</div>
-      <div id="profileImage"><img src="profilePic.JPG" alt="picture of Tyler Walke"></div>
-      <div id="aboutContent">
-        <p>I'm a MERN full stack web developer. When I'm not coding you can usually find me exploring the Utah backcountry with my dog Finn.</p>
-        <p>Feel free to <a class="navButton contactTag" href="#contactScreen">contact me</a> about full-time employment opportunities or to collaborate on your next freelance project.</p>
-      </div>
-    </div>
-<!-- PROJECTS -->
-    <div id="projectsScreen">
-      <div id="projectsTitle">
-        <h2>Projects</h2>
-        <p>Here are a few of the projects I've been working on in my spare time. You can view my GitHub <a id="mainGitHubLink" target="_blank" href="https://github.com/twalke"><strong>here</strong></a>.</p>
-      </div>
-      <div id="projectsContent">
-        <div class="description"><strong>BraverMountain Mushing</strong></div>
-        <div class="descText">
-          <ul>
-            <li>Freelance website built to promote the dog mushing and writing projects of Blair Braverman and Quince Mountain.</li>
-            <li>Built in HTML/CSS and JavaScript. You can see the GitHub repo <a target="_blank" href="https://github.com/awalke/BravermountainMushing"><strong>here</strong></a>.</li>
-            <li>Uses twitter API to build custom modals to display long threads of tweets directly on the website without requiring the user to visit twitter or have an account.</li>
-          </ul>
+          </div>
         </div>
-        <div class="description"><strong>Pure CSS Animations</strong></div>
-        <div class="descText">
-          <ul>
-            <li>Built and animated entirely using HTML/CSS</li>
-            <li>Repo for CSS Dog from top of site can be found <a target="_blank" href="https://codepen.io/twalke/pen/Qzbapo"><strong>here</strong></a>.</li>
-            <li>Repo for my favorite meme is <a target="_blank" href="https://codepen.io/twalke/pen/wRmoNP"><strong>here</strong></a>.</li>
-          </ul>
+        <div class="back">
+          <div class="grid">
+            <div class="left">
+              <div id="first">TYLER</div>
+              <br>
+              <div id="last">WALKE</div>
+              <br>
+              <div id="title">FRONTEND DEVELOPER</div>
+            </div>
+            <div class="center-line">
+              <div class="line">
+
+              </div>
+            </div>
+            <div class="right">
+                <div id="phone">
+                  <img src="icons/phone-receiver.png">(832)693-1724
+                </div>
+                <div id="email">
+                  <img src="icons/close-envelope.png">tyler.walke@gmail.com
+                </div>
+                <div id="website">
+                  <img src="icons/global.png"><a href="https://www.tylerwadewalke.com" target='_blank'>tylerwadewalke.com</a>
+                </div>
+                <div id="github">
+                  <img src="icons/github-logo.png"><a href="https://www.github.com/twalke" target='_blank'>github.com/twalke</a>
+                </div>
+                <div id="linkedin">
+                  <img src="icons/linkedin.png"><a href="https://www.linkedin.com/in/tyler-walke/" target='_blank'>linkedin.com/in/tyler-walke/</a>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="description"><strong>Sparky</strong></div>
-        <div class="descText">
-          <ul>
-            <li>Second Place at BYU hackathon in March 2018. </li>
-            <li>Built in Android Studio. You can see the GitHub repo <a target="_blank" href="https://github.com/twalke/Sparky-master"><strong>here</strong></a>.</li>
-            <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group.</li>
-          </ul>
-        </div>
-        <div class="description"><strong>Canyon Guide</strong></div>
-        <div class="descText">
-          <ul>
-            <li>Mobile app that uses crowdsourcing to help climbers find routes in their
-              area.</li>
-            <li>Built in Android Studio.
-            </li>
-            <li>Links pictures of routes to GPS coordinates to allow easier navigation outdoors.</li>
-          </ul>
         </div>
       </div>
     </div>
-    <!-- RESUME -->
-    <div id="resumeScreen">
-      <div id="resumeTitle">
-        Resume
-        <p>Download a pdf of my resume</p>
-          <button onclick="onDownloadClick()" download="tyler_walke_resume" class="button" id="resumeDownloadButton">Download</button>
-      </div>
-      <div id="resumeContent">
-        <div class="resume">
-          <div class="leftText" id="nameHead">
-            <strong>Tyler<br>Walke</strong>
-          </div>
-          <div class="rightText" id="contactText">832.693.1724 <br>
-            tyler.walke@gmail.com <br>
-            tylerwadewalke.com <br>
-            github.com/twalke
-            <br>
-          </div>
-          <div class="leftText" id="eduHead">
-            Education
-          </div>
-          <div class="rightText" id="eduText">
-            <strong>Brigham Young University</strong> (Provo, UT) <br>
-            B.A. in International Relations, 2015 <br>
-            <strong>Utah Valley University</strong> (Orem, UT) <br>
-            2017-present; pursuing B.S. in computer science
-          </div>
-          <div class="leftText" id="projectsHead">
-            Projects
-          </div>
-          <div class="rightText" id="projectsText">
-            <strong>Personal website:</strong> tylerwadewalke.com <br><br>
-            <strong>Sparky</strong>
-            <ul>
-              <li>Second Place at BYU hackathon in March 2018 </li>
-              <li>Built in Android Studio </li>
-              <li>Lets users view dogs available for adoption in their area and helps connect users to relevant adoption group</li>
-            </ul>
-            <strong>Canyon Guide</strong>
-            <ul>
-              <li>Built in Android Studio </li>
-              <li>Mobile app that utilizes crowdsourcing to help climbers find routes in their
-              area. </li>
-              <li>Links pictures of routes to GPS coordinates to allow easier navigation
-              outdoors </li>
-            </ul>
-          </div>
-          <div class="leftText" id="skillsHead">
-            Skills
-          </div>
-          <div class="rightText" id="skillsText">HTML/CSS, JavaScript, React, C++, Java, Android Studio, Stata, Adobe InDesign, and Adobe Illustrator <br>
-            <strong>Language:</strong> Spanish fluency
-          </div>
-          <div class="leftText" id="workHead">
-            Work Experience
-          </div>
-          <div class="rightText" id="workText">
-            <strong>Jambic</strong> (Orem, UT) <br>
-            <em>Web Developer</em> <br>
-            Apr 2018-Nov 2018
-            <ul>
-              <li>Helped build HIPAA compliant electronic medical record platform
-                for podiatrists </li>
-              <li>Used JavaScript to build patient and insurance billing system</li>
-          </ul>
-            <strong>Aspiro</strong> (Sandy, UT) <br>
-            <em>Wilderness Therapy Field Guide</em> <br>
-            May 2016-November 2016
-            <ul>
-              <li>Taught coping skills to teenagers recovering from addictions and social
-              interaction skills to teenagers with autism spectrum disorders </li>
-              <li>On duty 24 hours a day for 8 days at a time </li>
-              <li>Cultivated exellent communication skills with co-guide team to keep
-              participants safe and on-site</li>
-          </ul>
-            <strong>Elevate Global</strong> (Asunción, Paraguay) <br>
-            <em>Director of Research</em> <br>
-            Aug. 2015–May 2016 <br>
-            <ul>
-              <li>Set up databases and gathered research on efficacy of Elevate’s training
-              programs by surveying hundreds of businesses across Paraguay </li>
-              <li>Cultivated relationships with partners at banking institutions</li>
-              <li>Demonstrated to potential partners the real impact of Elevate’s business model </li>
-              <li>Negotiated book printing contracts worth tens of thousands of dollars </li>
-            </ul>
-            <em>Intern</em> <br>
-            Aug. 2014–Dec. 2014 <br>
-            <ul>
-              <li>Helped launch first four schools of Elevate and participated in early start-up
-              phase of company </li>
-              <li>Created substantial portions of text and the majority of the layout deisgn of
-              business textbooks</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CONTACT -->
-    <div id="contactScreen">
-      <div id="contactTitle">
-        Contact
-        <p>You can reach me at <strong>tyler.walke@gmail.com</strong> or by using the form on this page.</p>
-      </div>
-      <div id="contactContent">
-        <form action="http://formspree.io/tyler.walke@gmail.com" method="post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="emailForm">
-                <label for="fullName">Name*</label>
-                <input type="fullName" class="form-control" id="fullName" name="name" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="emailForm">
-                <label for="senderEmail">Email*</label>
-                <input type="email" class="form-control" id="senderEmail" name="email" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="emailForm">
-                <label for="senderPhone">Phone</label>
-                <input type="tel" class="form-control" id="senderPhone" name="phone">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="emailForm">
-                <label for="senderCompany">Company</label>
-                <input type="senderCompany" class="form-control" id="senderCompany" name="company">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="emailForm">
-                <label for="emailTextArea">Message*</label>
-                <textarea class="form-control" id="emailTextArea" name="message" required></textarea>
-              </div>
-            </div>
-            <button type="submit" class="button" id="submitButton">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <script src="app.js"></script>
-</body>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
